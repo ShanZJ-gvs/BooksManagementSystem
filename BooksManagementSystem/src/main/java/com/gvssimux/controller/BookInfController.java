@@ -5,6 +5,7 @@ import com.gvssimux.service.BookInfServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +24,9 @@ public class BookInfController {
 
         return bookInfServiceImpl.selectByPrimaryKey(2);
     }
+
+
+
 
 
 }
