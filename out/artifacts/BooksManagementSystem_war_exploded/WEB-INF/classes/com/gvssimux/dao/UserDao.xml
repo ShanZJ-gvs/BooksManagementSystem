@@ -3,35 +3,35 @@
 <mapper namespace="com.gvssimux.dao.UserDao">
   <resultMap id="BaseResultMap" type="com.gvssimux.pojo.User">
     <id column="id" jdbcType="VARCHAR" property="id" />
-    <result column="user" jdbcType="VARCHAR" property="user" />
+    <result column="usertest" jdbcType="VARCHAR" property="usertest" />
     <result column="pwd" jdbcType="VARCHAR" property="pwd" />
     <result column="sign" jdbcType="VARCHAR" property="sign" />
     <result column="time" jdbcType="INTEGER" property="time" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, `user`, pwd, sign, `time`
+    id, `usertest`, pwd, sign, `time`
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from user
+    from usertest
     where id = #{id,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from user
+    delete from usertest
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.User" useGeneratedKeys="true">
-    insert into user (`user`, pwd, sign, 
+    insert into usertest (`usertest`, pwd, sign,
       `time`)
-    values (#{user,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{sign,jdbcType=VARCHAR}, 
+    values (#{usertest,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{sign,jdbcType=VARCHAR},
       #{time,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.User" useGeneratedKeys="true">
-    insert into user
+    insert into usertest
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="user != null">
-        `user`,
+      <if test="usertest != null">
+        `usertest`,
       </if>
       <if test="pwd != null">
         pwd,
@@ -44,8 +44,8 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="user != null">
-        #{user,jdbcType=VARCHAR},
+      <if test="usertest != null">
+        #{usertest,jdbcType=VARCHAR},
       </if>
       <if test="pwd != null">
         #{pwd,jdbcType=VARCHAR},
@@ -59,10 +59,10 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.gvssimux.pojo.User">
-    update user
+    update usertest
     <set>
-      <if test="user != null">
-        `user` = #{user,jdbcType=VARCHAR},
+      <if test="usertest != null">
+        `usertest` = #{usertest,jdbcType=VARCHAR},
       </if>
       <if test="pwd != null">
         pwd = #{pwd,jdbcType=VARCHAR},
@@ -77,8 +77,8 @@
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.gvssimux.pojo.User">
-    update user
-    set `user` = #{user,jdbcType=VARCHAR},
+    update usertest
+    set `usertest` = #{usertest,jdbcType=VARCHAR},
       pwd = #{pwd,jdbcType=VARCHAR},
       sign = #{sign,jdbcType=VARCHAR},
       `time` = #{time,jdbcType=INTEGER}

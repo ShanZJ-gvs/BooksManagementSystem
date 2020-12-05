@@ -911,66 +911,75 @@ SELECT|sys.sys_config:null
     <column id="267" parent="238" name="id">
       <Position>1</Position>
       <Comment>后台生成的唯一标识</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>int(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="268" parent="238" name="user">
+    <column id="268" parent="238" name="userid">
       <Position>2</Position>
+      <Comment>uuid</Comment>
+      <DataType>varchar(200)|0s</DataType>
+    </column>
+    <column id="269" parent="238" name="user">
+      <Position>3</Position>
       <Comment>登录名</Comment>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="269" parent="238" name="pwd">
-      <Position>3</Position>
+    <column id="270" parent="238" name="pwd">
+      <Position>4</Position>
       <Comment>密码</Comment>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="270" parent="238" name="sign">
-      <Position>4</Position>
+    <column id="271" parent="238" name="sign">
+      <Position>5</Position>
       <Comment>身份(用户、管理)</Comment>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="271" parent="238" name="time">
-      <Position>5</Position>
+    <column id="272" parent="238" name="time">
+      <Position>6</Position>
       <Comment>剩余借书的次数</Comment>
       <DataType>int(10)|0s</DataType>
     </column>
-    <key id="272" parent="238" name="PRIMARY">
+    <key id="273" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="273" parent="239" name="id">
+    <column id="274" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(50)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="274" parent="239" name="bookname">
+    <column id="275" parent="239" name="userid">
       <Position>2</Position>
+      <Comment>user表唯一标识</Comment>
+      <DataType>varchar(200)|0s</DataType>
+    </column>
+    <column id="276" parent="239" name="bookname">
+      <Position>3</Position>
       <Comment>书名</Comment>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <column id="275" parent="239" name="author">
-      <Position>3</Position>
+    <column id="277" parent="239" name="author">
+      <Position>4</Position>
       <Comment>作者</Comment>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <column id="276" parent="239" name="publish">
-      <Position>4</Position>
+    <column id="278" parent="239" name="publish">
+      <Position>5</Position>
       <Comment>出版商</Comment>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <column id="277" parent="239" name="ps">
-      <Position>5</Position>
+    <column id="279" parent="239" name="ps">
+      <Position>6</Position>
       <Comment>备注</Comment>
       <DataType>longtext|0s</DataType>
     </column>
-    <column id="278" parent="239" name="status">
-      <Position>6</Position>
+    <column id="280" parent="239" name="status">
+      <Position>7</Position>
       <Comment>`待处理`，`已处理`，`拒绝`</Comment>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <key id="279" parent="239" name="PRIMARY">
+    <key id="281" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

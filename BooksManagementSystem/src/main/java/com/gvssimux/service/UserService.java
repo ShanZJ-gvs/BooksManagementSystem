@@ -3,13 +3,13 @@ package com.gvssimux.service;
 import com.gvssimux.pojo.User;
 
 public interface UserService {
-    int deleteByPrimaryKey(String id);
+    int deleteByPrimaryKey(Integer id);
 
     int insert(User record);
 
     int insertSelective(User record);
 
-    User selectByPrimaryKey(String id);
+    User selectByPrimaryKey(Integer id);
 
     int updateByPrimaryKeySelective(User record);
 

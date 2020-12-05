@@ -31,7 +31,7 @@
     <form method="post" action="${pageContext.request.contextPath}/login">
     <div id="form">
         <div class="input_box">
-            <i class="fas fa-user"></i>
+            <i class="fas fa-usertest"></i>
             <input type="text" placeholder="Username">
         </div>
         <div class="input_box">

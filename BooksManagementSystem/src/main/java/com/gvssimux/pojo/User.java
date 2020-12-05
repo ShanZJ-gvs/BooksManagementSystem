@@ -17,7 +17,12 @@ public class User implements Serializable {
     /**
      * 后台生成的唯一标识
      */
-    private String id;
+    private Integer id;
+
+    /**
+     * uuid
+     */
+    private String userid;
 
     /**
      * 登录名
@@ -40,4 +45,17 @@ public class User implements Serializable {
     private Integer time;
 
     private static final long serialVersionUID = 1L;
+
+    public User(String userid, String user, String pwd, String sign, Integer time) {
+        this.userid = userid;
+        this.user = user;
+        this.pwd = pwd;
+        this.sign = sign;
+        this.time = time;
+    }
+
+    public User(Integer id, String userid) {
+        this.id = id;
+        this.userid = userid;
+    }
 }

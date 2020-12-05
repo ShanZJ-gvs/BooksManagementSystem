@@ -1,9 +1,12 @@
 import com.gvssimux.pojo.BookInf;
 import com.gvssimux.service.BookInfService;
 import com.gvssimux.service.BookInfServiceImpl;
+import jdk.nashorn.internal.ir.debug.ClassHistogramElement;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.UUID;
 
 
 public class test {
@@ -46,9 +49,8 @@ public class test {
 
 
     /**
-     * 删除
+     * 根据id去部分修改
      */
-
     @Test
     public void setBookById(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -70,6 +72,9 @@ public class test {
 
         System.out.println("执行成功=====》:"+bookInfServiceImpl.selectByPrimaryKey(6));
     }
+
+
+
 
 
 
