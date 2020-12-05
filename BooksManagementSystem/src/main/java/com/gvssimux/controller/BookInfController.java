@@ -17,7 +17,7 @@ public class BookInfController {
      * 根据id查询
      */
 
-    @RequestMapping("/test")
+    @RequestMapping("/allbook")
     public BookInf test02(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);

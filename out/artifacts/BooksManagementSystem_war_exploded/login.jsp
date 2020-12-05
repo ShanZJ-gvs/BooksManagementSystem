@@ -19,11 +19,16 @@
             background-size: 100% auto;
         }
     </style>
+    <script>
+
+    </script>
 
 </head>
 <body>
 <div id="login_box">
+
     <h2> LOGIN</h2>
+    <form method="post" action="${pageContext.request.contextPath}/login">
     <div id="form">
         <div class="input_box">
             <i class="fas fa-user"></i>
@@ -34,10 +39,15 @@
             <input type="password" placeholder="Password">
         </div>
     </div>
-    <button>Sign in</button>
+        <input type="submit" value="Sign in" id="button1">
+        <button>Sign in</button>
+    </form>
+
     <div id="sign-in">
         <a href="#">忘记密码？</a>
     </div>
+
+
 </div>
 </body>
 </html>
