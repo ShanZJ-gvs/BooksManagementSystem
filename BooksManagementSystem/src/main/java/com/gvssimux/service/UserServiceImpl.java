@@ -7,7 +7,7 @@ import com.gvssimux.pojo.User;
 public class UserServiceImpl implements UserService{
     private UserDao mapper;
 
-    public int deleteByPrimaryKey(Integer id) {
+    public int deleteByPrimaryKey(String id) {
         return mapper.deleteByPrimaryKey(id);
     }
 
@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService{
         return mapper.insertSelective(record);
     }
 
-    public User selectByPrimaryKey(Integer id) {
+    public User selectByPrimaryKey(String id) {
         return mapper.selectByPrimaryKey(id);
     }
 

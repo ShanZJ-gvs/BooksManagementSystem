@@ -13,9 +13,7 @@
     <bean id="BookServiceImpl" class="com.gvssimux.service.BookInfServiceImpl">
         <property name="mapper" ref="bookInfDao"/>
     </bean>
-    <bean id="UserServiceImpl" class="com.gvssimux.service.UserServiceImpl">
-        <property name="mapper" ref="userDao"/>
-    </bean>
+
 
 
 

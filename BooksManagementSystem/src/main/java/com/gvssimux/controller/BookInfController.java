@@ -18,12 +18,14 @@ public class BookInfController {
      */
 
     @RequestMapping("/allbook")
-    public BookInf test02(){
+    public BookInf allbook(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
 
         return bookInfServiceImpl.selectByPrimaryKey(2);
     }
+
+
 
 
 

@@ -3,13 +3,19 @@
 <mapper namespace="com.gvssimux.dao.BorrowDao">
   <resultMap id="BaseResultMap" type="com.gvssimux.pojo.Borrow">
     <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="borrowid" jdbcType="VARCHAR" property="borrowid" />
     <result column="userid" jdbcType="VARCHAR" property="userid" />
     <result column="bookname" jdbcType="VARCHAR" property="bookname" />
     <result column="isbn" jdbcType="VARCHAR" property="isbn" />
     <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="starttime" jdbcType="DATE" property="starttime" />
+    <result column="starttime2" jdbcType="DATE" property="starttime2" />
+    <result column="endtime2" jdbcType="DATE" property="endtime2" />
+    <result column="endtime" jdbcType="DATE" property="endtime" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, userid, bookname, isbn, `status`
+    id, borrowid, userid, bookname, isbn, `status`, starttime, starttime2, endtime2, 
+    endtime
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -22,14 +28,21 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.Borrow" useGeneratedKeys="true">
-    insert into borrow (userid, bookname, isbn, 
-      `status`)
-    values (#{userid,jdbcType=VARCHAR}, #{bookname,jdbcType=VARCHAR}, #{isbn,jdbcType=VARCHAR}, 
-      #{status,jdbcType=VARCHAR})
+    insert into borrow (borrowid, userid, bookname, 
+      isbn, `status`, starttime, 
+      starttime2, endtime2, endtime
+      )
+    values (#{borrowid,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, #{bookname,jdbcType=VARCHAR}, 
+      #{isbn,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{starttime,jdbcType=DATE}, 
+      #{starttime2,jdbcType=DATE}, #{endtime2,jdbcType=DATE}, #{endtime,jdbcType=DATE}
+      )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.Borrow" useGeneratedKeys="true">
     insert into borrow
     <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="borrowid != null">
+        borrowid,
+      </if>
       <if test="userid != null">
         userid,
       </if>
@@ -42,8 +55,23 @@
       <if test="status != null">
         `status`,
       </if>
+      <if test="starttime != null">
+        starttime,
+      </if>
+      <if test="starttime2 != null">
+        starttime2,
+      </if>
+      <if test="endtime2 != null">
+        endtime2,
+      </if>
+      <if test="endtime != null">
+        endtime,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="borrowid != null">
+        #{borrowid,jdbcType=VARCHAR},
+      </if>
       <if test="userid != null">
         #{userid,jdbcType=VARCHAR},
       </if>
@@ -56,11 +84,26 @@
       <if test="status != null">
         #{status,jdbcType=VARCHAR},
       </if>
+      <if test="starttime != null">
+        #{starttime,jdbcType=DATE},
+      </if>
+      <if test="starttime2 != null">
+        #{starttime2,jdbcType=DATE},
+      </if>
+      <if test="endtime2 != null">
+        #{endtime2,jdbcType=DATE},
+      </if>
+      <if test="endtime != null">
+        #{endtime,jdbcType=DATE},
+      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.gvssimux.pojo.Borrow">
     update borrow
     <set>
+      <if test="borrowid != null">
+        borrowid = #{borrowid,jdbcType=VARCHAR},
+      </if>
       <if test="userid != null">
         userid = #{userid,jdbcType=VARCHAR},
       </if>
@@ -73,15 +116,32 @@
       <if test="status != null">
         `status` = #{status,jdbcType=VARCHAR},
       </if>
+      <if test="starttime != null">
+        starttime = #{starttime,jdbcType=DATE},
+      </if>
+      <if test="starttime2 != null">
+        starttime2 = #{starttime2,jdbcType=DATE},
+      </if>
+      <if test="endtime2 != null">
+        endtime2 = #{endtime2,jdbcType=DATE},
+      </if>
+      <if test="endtime != null">
+        endtime = #{endtime,jdbcType=DATE},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.gvssimux.pojo.Borrow">
     update borrow
-    set userid = #{userid,jdbcType=VARCHAR},
+    set borrowid = #{borrowid,jdbcType=VARCHAR},
+      userid = #{userid,jdbcType=VARCHAR},
       bookname = #{bookname,jdbcType=VARCHAR},
       isbn = #{isbn,jdbcType=VARCHAR},
-      `status` = #{status,jdbcType=VARCHAR}
+      `status` = #{status,jdbcType=VARCHAR},
+      starttime = #{starttime,jdbcType=DATE},
+      starttime2 = #{starttime2,jdbcType=DATE},
+      endtime2 = #{endtime2,jdbcType=DATE},
+      endtime = #{endtime,jdbcType=DATE}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

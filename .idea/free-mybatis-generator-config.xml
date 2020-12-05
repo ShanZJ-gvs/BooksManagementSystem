@@ -3,6 +3,30 @@
   <component name="PersistentConfig">
     <option name="historyConfigList">
       <map>
+        <entry key="bookinf">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="BookInfDao" />
+              <option name="daoPackage" value="com.gvssimux.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="BookInf" />
+              <option name="modelPackage" value="com.gvssimux.pojo" />
+              <option name="name" value="bookinf" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/BooksManagementSystem" />
+              <option name="tableName" value="bookinf" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
         <entry key="borrow">
           <value>
             <Config>
@@ -27,6 +51,30 @@
             </Config>
           </value>
         </entry>
+        <entry key="overtime">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="OverTimeDao" />
+              <option name="daoPackage" value="com.gvssimux.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="OverTime" />
+              <option name="modelPackage" value="com.gvssimux.pojo" />
+              <option name="name" value="overtime" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/BooksManagementSystem" />
+              <option name="tableName" value="overtime" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="com.gvssimux.dao" />
+            </Config>
+          </value>
+        </entry>
         <entry key="user">
           <value>
             <Config>
@@ -48,6 +96,30 @@
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
               <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="userwant">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="UserWantDao" />
+              <option name="daoPackage" value="com.gvssimux.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="UserWant" />
+              <option name="modelPackage" value="com.gvssimux.pojo" />
+              <option name="name" value="userwant" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$/BooksManagementSystem" />
+              <option name="tableName" value="userwant" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/java" />
+              <option name="xmlPackage" value="com.gvssimux.dao" />
             </Config>
           </value>
         </entry>

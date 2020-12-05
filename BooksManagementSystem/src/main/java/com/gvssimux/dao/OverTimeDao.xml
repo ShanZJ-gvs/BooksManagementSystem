@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gvssimux.dao.OverTimeDao">
+  <resultMap id="BaseResultMap" type="com.gvssimux.pojo.OverTime">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="borrow" jdbcType="VARCHAR" property="borrow" />
+    <result column="otime" jdbcType="DATE" property="otime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, userid, borrow, otime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from overtime
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from overtime
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.OverTime" useGeneratedKeys="true">
+    insert into overtime (userid, borrow, otime
+      )
+    values (#{userid,jdbcType=VARCHAR}, #{borrow,jdbcType=VARCHAR}, #{otime,jdbcType=DATE}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.OverTime" useGeneratedKeys="true">
+    insert into overtime
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        userid,
+      </if>
+      <if test="borrow != null">
+        borrow,
+      </if>
+      <if test="otime != null">
+        otime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="borrow != null">
+        #{borrow,jdbcType=VARCHAR},
+      </if>
+      <if test="otime != null">
+        #{otime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gvssimux.pojo.OverTime">
+    update overtime
+    <set>
+      <if test="userid != null">
+        userid = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="borrow != null">
+        borrow = #{borrow,jdbcType=VARCHAR},
+      </if>
+      <if test="otime != null">
+        otime = #{otime,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gvssimux.pojo.OverTime">
+    update overtime
+    set userid = #{userid,jdbcType=VARCHAR},
+      borrow = #{borrow,jdbcType=VARCHAR},
+      otime = #{otime,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

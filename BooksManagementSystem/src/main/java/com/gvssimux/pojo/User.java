@@ -11,16 +11,33 @@ import lombok.NoArgsConstructor;
  * @author 
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class User implements Serializable {
-    private Integer id;
+    /**
+     * 后台生成的唯一标识
+     */
+    private String id;
 
+    /**
+     * 登录名
+     */
     private String user;
 
+    /**
+     * 密码
+     */
     private String pwd;
 
+    /**
+     * 身份(用户、管理)
+     */
     private String sign;
+
+    /**
+     * 剩余借书的次数
+     */
+    private Integer time;
 
     private static final long serialVersionUID = 1L;
 }

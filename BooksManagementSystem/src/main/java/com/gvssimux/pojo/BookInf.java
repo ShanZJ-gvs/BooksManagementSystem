@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
  * @author 
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class BookInf implements Serializable {
     private Integer id;
 
@@ -51,10 +51,19 @@ public class BookInf implements Serializable {
      */
     private String money;
 
+    /**
+     * 总量
+     */
+    private Integer sum;
+
+    /**
+     * 现有数量
+     */
+    private Integer num;
+
     private static final long serialVersionUID = 1L;
 
-
-    public BookInf(String bookName, String bookAuthor, String bookPublish, String bookType, String bookIntroduction, String isbn, String money) {
+    public BookInf(String bookName, String bookAuthor, String bookPublish, String bookType, String bookIntroduction, String isbn, String money, Integer sum, Integer num) {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         this.bookPublish = bookPublish;
@@ -62,5 +71,12 @@ public class BookInf implements Serializable {
         this.bookIntroduction = bookIntroduction;
         this.isbn = isbn;
         this.money = money;
+        this.sum = sum;
+        this.num = num;
+    }
+
+    public BookInf(Integer id, Integer num) {
+        this.id = id;
+        this.num = num;
     }
 }
