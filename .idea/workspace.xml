@@ -34,31 +34,121 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/util/GetUUID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa0a04fd-b0dc-4042-a259-ffe9842e2508.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aa0a04fd-b0dc-4042-a259-ffe9842e2508.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/untitled-1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/untitled.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/avatar1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/avatar2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/avatar3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/avatar4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/avatar5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/js/bs-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/js/chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/css/untitled-1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/css/untitled.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/bs-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa0a04fd-b0dc-4042-a259-ffe9842e2508.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d65b952c-d548-4640-83e4-de5f839a616a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa0a04fd-b0dc-4042-a259-ffe9842e2508/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d65b952c-d548-4640-83e4-de5f839a616a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserWantDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserWantDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/UserWant.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/UserWant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserWantDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserWantDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/alex-kramar-iKZe8wjM1tA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/antoine-meinsier-BuXGRbyI02s-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/dave-hoefler-Z9sOryDcjjE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/img-df62e7901c8ec0febd7af9cb725dd8da.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/ines-alvarez-fdez-8k_B_BfBpY4-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/ines-alvarez-fdez-F-gfrzSIPZo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/jamie-davies-bCpAvL49GsU-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/janis-fasel-0TvsqeCebkQ-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/marek-piwnicki-2JEALP6mrSA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/marek-piwnicki-KMNgms4bt-M-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/mohammad-dadkhah-sMm0AJlwY7E-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/nathan-van-egmond-uwrTwMaxVR4-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/nigel-tadyanehondo-d30E78EkCIE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/thomas-de-luze-PH3VkdZL5z4-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/static/image/wafwfawa1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserWantDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserWantDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/alex-kramar-iKZe8wjM1tA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/antoine-meinsier-BuXGRbyI02s-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/dave-hoefler-Z9sOryDcjjE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/img-df62e7901c8ec0febd7af9cb725dd8da.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/ines-alvarez-fdez-8k_B_BfBpY4-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/ines-alvarez-fdez-F-gfrzSIPZo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/jamie-davies-bCpAvL49GsU-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/janis-fasel-0TvsqeCebkQ-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/marek-piwnicki-2JEALP6mrSA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/marek-piwnicki-KMNgms4bt-M-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/mohammad-dadkhah-sMm0AJlwY7E-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/nathan-van-egmond-uwrTwMaxVR4-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/nigel-tadyanehondo-d30E78EkCIE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/thomas-de-luze-PH3VkdZL5z4-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/wafwfawa1.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +158,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -83,13 +174,6 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1kizwnPRzuXNBaMIhhxaEYreg1x" />
   <component name="ProjectLevelVcsManager">
@@ -105,31 +189,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringMVC" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="构件" />
+    <property name="project.structure.last.edited" value="SDK" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42068964" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaProject\BMS\BooksManagementSystem\src\main\java\com\gvssimux\dao" />
-      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\static\css" />
-      <recent name="D:\JavaProject\BMS\out\artifacts\BooksManagementSystem_war_exploded\static\css" />
-      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web" />
-      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\static" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gvssimux.util" />
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\src\main\java\com\gvssimux\dao" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\src\main\resources\generator" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\static\css" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\static\image" />
-      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\WEB-INF\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\WEB-INF\jsp" />
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\img\avatars" />
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\src\main\java\com\gvssimux\dao" />
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\static\css" />
+      <recent name="D:\JavaProject\BMS\out\artifacts\BooksManagementSystem_war_exploded\static\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gvssimux.util" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -139,7 +223,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.borrow.add">
+  <component name="RunManager" selected="JUnit.test.setBookById">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -151,21 +235,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="borrow.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BooksManagementSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="borrow" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test.getBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
       <option name="METHOD_NAME" value="getBookById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.setBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksManagementSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="setBookById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,9 +285,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/BooksManagementSystem_war_exploded/" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="BooksManagementSystem:war exploded">
           <settings>
@@ -212,7 +295,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="未命名_BMS" />
+        <option name="BASE_DIRECTORY_NAME" value="未命名_BMS_2" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -399,19 +482,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
+      <item itemvalue="JUnit.usertest.add" />
       <item itemvalue="JUnit.usertest.get" />
       <item itemvalue="JUnit.test.getBookById" />
       <item itemvalue="JUnit.usertest.set" />
-      <item itemvalue="JUnit.usertest.add" />
-      <item itemvalue="JUnit.borrow.add" />
+      <item itemvalue="JUnit.test.setBookById" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.borrow.add" />
-        <item itemvalue="JUnit.usertest.add" />
+        <item itemvalue="JUnit.test.setBookById" />
         <item itemvalue="JUnit.usertest.set" />
-        <item itemvalue="JUnit.usertest.get" />
         <item itemvalue="JUnit.test.getBookById" />
+        <item itemvalue="JUnit.usertest.get" />
+        <item itemvalue="JUnit.usertest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -434,7 +517,16 @@
       <workItem from="1606977763371" duration="5530000" />
       <workItem from="1607044359087" duration="5366000" />
       <workItem from="1607139903115" duration="2325000" />
-      <workItem from="1607159127024" duration="8144000" />
+      <workItem from="1607159127024" duration="8613000" />
+      <workItem from="1607172242010" duration="472000" />
+      <workItem from="1607173596837" duration="879000" />
+      <workItem from="1607185739788" duration="143000" />
+      <workItem from="1607224488513" duration="2986000" />
+      <workItem from="1607242139827" duration="3493000" />
+      <workItem from="1607259863209" duration="3314000" />
+      <workItem from="1607308675096" duration="2864000" />
+      <workItem from="1607327197317" duration="405000" />
+      <workItem from="1607327855622" duration="2278000" />
     </task>
     <servers />
   </component>
@@ -446,7 +538,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -470,151 +574,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="344" y="82" key="#SSH_配置" timestamp="1606266889164">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="344" y="82" key="#SSH_配置/0.0.1536.824@0.0.1536.824" timestamp="1606266889164" />
-    <state x="542" y="313" key="#Tomcat_Server" timestamp="1606267736497">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="542" y="313" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1606267736497" />
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1607160129916">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607160129916" />
-    <state x="405" y="274" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog" timestamp="1606201860935">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="405" y="274" key="#com.intellij.codeInsight.i18n.I18nizeQuickFixDialog/0.0.1536.824@0.0.1536.824" timestamp="1606201860935" />
-    <state x="292" y="23" width="1089" height="801" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606978470460">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="292" y="23" width="1089" height="801" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606978470460" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607164225588">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607044916287" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607164225588" />
-    <state x="624" y="236" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1607153145034">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="499" y="187" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1607044709345" />
-    <state x="624" y="236" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607153145034" />
-    <state x="428" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1606266090437">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="428" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1606266090437" />
-    <state x="486" y="74" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1606267741359">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="486" y="74" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1606267741359" />
-    <state x="250" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1606267906388">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="250" y="167" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606267906388" />
-    <state x="612" y="72" width="814" height="717" key="#部署" timestamp="1606267423743">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="612" y="72" width="814" height="717" key="#部署/0.0.1536.824@0.0.1536.824" timestamp="1606267423743" />
-    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1607159569886">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606979105944" />
-    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607159569886" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1607170500936">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607170500936" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1607170500934">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607170500934" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1607170500934">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607170500934" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1607170500935">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607170500935" />
-    <state width="1877" height="170" key="GridCell.Tab.1.bottom" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="170" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.1.center" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="170" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.1.left" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="170" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.1.right" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="170" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.2.bottom" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607054766743" />
-    <state width="1877" height="170" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.2.center" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="170" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.2.left" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607054766742" />
-    <state width="1877" height="170" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="1877" height="170" key="GridCell.Tab.2.right" timestamp="1607155604763">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607054766743" />
-    <state width="1877" height="170" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607155604763" />
-    <state width="146" height="477" key="HiddenNamespacesPopup" timestamp="1606200936552">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="146" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1606200936552" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1607045278987">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607045278987" />
-    <state x="339" y="46" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1606266780032">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="339" y="46" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606266780032" />
-    <state x="332" y="148" width="872" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606264092936">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="332" y="148" width="872" height="641" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1606264092936" />
-    <state x="731" y="184" width="519" height="539" key="ftp.server.browser" timestamp="1606267473497">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="731" y="184" width="519" height="539" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1606267473497" />
-    <state x="322" y="72" key="new project wizard" timestamp="1606198495451">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="322" y="72" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1606198495451" />
-    <state x="41" y="189" key="run.anything.popup" timestamp="1606200416169">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="41" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606200416169" />
-    <state x="439" y="95" key="spring file set editor" timestamp="1606202599956">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="439" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1606202599956" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

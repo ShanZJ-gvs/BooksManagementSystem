@@ -13,6 +13,9 @@ import java.util.Date;
 
 public class borrow {
 
+
+    /**
+     * 增加借阅记录*/
     @Test
     public void add(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");

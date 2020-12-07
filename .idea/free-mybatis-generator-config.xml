@@ -94,7 +94,7 @@
               <option name="tableName" value="user" />
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
-              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlMvnPath" value="src/main/java" />
               <option name="xmlPackage" value="com.gvssimux.dao" />
             </Config>
           </value>

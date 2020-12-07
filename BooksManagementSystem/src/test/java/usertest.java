@@ -43,7 +43,20 @@ public class usertest {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserServiceImpl user = context.getBean("UserServiceImpl", UserServiceImpl.class);
 
-        User user1 = new User(GetUUID.get(),"user01","user01","user",5);
+        User user1 = new User("小明",GetUUID.get(),"user01","12345","user",5);
         System.out.println(user.insertSelective(user1));
     }
+
+
+    /**
+     * 删除
+     */
+    @Test
+    public void drop(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserServiceImpl user = context.getBean("UserServiceImpl", UserServiceImpl.class);
+
+        System.out.println(user.deleteByPrimaryKey(2));
+    }
+
 }

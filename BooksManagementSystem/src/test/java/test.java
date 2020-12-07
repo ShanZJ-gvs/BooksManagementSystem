@@ -44,7 +44,7 @@ public class test {
         BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
 
 
-        System.out.println("执行成功deleteBook=====》:"+bookInfServiceImpl.deleteByPrimaryKey(1));
+        System.out.println("执行成功deleteBook=====》:"+bookInfServiceImpl.deleteByPrimaryKey(3));
     }
 
 
@@ -56,7 +56,6 @@ public class test {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
         BookInf Inf = new BookInf(6,5);
-
         System.out.println("执行成功setBookById=====》:"+bookInfServiceImpl.updateByPrimaryKeySelective(Inf));
     }
 

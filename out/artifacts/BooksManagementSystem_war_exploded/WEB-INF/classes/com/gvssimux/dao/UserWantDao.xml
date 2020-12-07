@@ -3,6 +3,7 @@
 <mapper namespace="com.gvssimux.dao.UserWantDao">
   <resultMap id="BaseResultMap" type="com.gvssimux.pojo.UserWant">
     <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
     <result column="bookname" jdbcType="VARCHAR" property="bookname" />
     <result column="author" jdbcType="VARCHAR" property="author" />
     <result column="publish" jdbcType="VARCHAR" property="publish" />
@@ -10,7 +11,7 @@
     <result column="status" jdbcType="VARCHAR" property="status" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, bookname, author, publish, ps, `status`
+    id, userid, bookname, author, publish, ps, `status`
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -23,14 +24,19 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.UserWant" useGeneratedKeys="true">
-    insert into userwant (bookname, author, publish, 
-      ps, `status`)
-    values (#{bookname,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, #{publish,jdbcType=VARCHAR}, 
-      #{ps,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR})
+    insert into userwant (userid, bookname, author, 
+      publish, ps, `status`
+      )
+    values (#{userid,jdbcType=VARCHAR}, #{bookname,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, 
+      #{publish,jdbcType=VARCHAR}, #{ps,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.UserWant" useGeneratedKeys="true">
     insert into userwant
     <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        userid,
+      </if>
       <if test="bookname != null">
         bookname,
       </if>
@@ -48,6 +54,9 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
+      </if>
       <if test="bookname != null">
         #{bookname,jdbcType=VARCHAR},
       </if>
@@ -68,6 +77,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.gvssimux.pojo.UserWant">
     update userwant
     <set>
+      <if test="userid != null">
+        userid = #{userid,jdbcType=VARCHAR},
+      </if>
       <if test="bookname != null">
         bookname = #{bookname,jdbcType=VARCHAR},
       </if>
@@ -88,7 +100,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.gvssimux.pojo.UserWant">
     update userwant
-    set bookname = #{bookname,jdbcType=VARCHAR},
+    set userid = #{userid,jdbcType=VARCHAR},
+      bookname = #{bookname,jdbcType=VARCHAR},
       author = #{author,jdbcType=VARCHAR},
       publish = #{publish,jdbcType=VARCHAR},
       ps = #{ps,jdbcType=VARCHAR},

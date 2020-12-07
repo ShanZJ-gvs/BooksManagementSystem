@@ -25,6 +25,11 @@ public class User implements Serializable {
     private String userid;
 
     /**
+     * 用户昵称
+     */
+    private String uname;
+
+    /**
      * 登录名
      */
     private String user;
@@ -46,16 +51,17 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public User(String userid, String user, String pwd, String sign, Integer time) {
+    public User(Integer id, String userid) {
+        this.id = id;
         this.userid = userid;
+    }
+
+    public User(String userid, String uname, String user, String pwd, String sign, Integer time) {
+        this.userid = userid;
+        this.uname = uname;
         this.user = user;
         this.pwd = pwd;
         this.sign = sign;
         this.time = time;
-    }
-
-    public User(Integer id, String userid) {
-        this.id = id;
-        this.userid = userid;
     }
 }
