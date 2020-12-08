@@ -15,23 +15,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 
+
     <script>
         function show() {
             $.post({
                 url:"${pageContext.request.contextPath}/allbook",
-                data:{"pwd":$("#pwd").val()},
+                data:{},
                 success:function (data) {
                     var html = "";
-                    html+=
-                        "<td>"+data.bookName+"</td>"+
-                        "<td>"+data.bookAuthor+"</td>"+
-                        "<td>"+data.bookPublish+"</td>"+
-                        "<td>"+data.num+"</td>"+
-                        "<td>"+data.sum+"</td>"+
-                        "<td>"+data.bookType+"</td>"+
-                        "<td>"+data.isbn+"</td>"
+                    for (var i=0;i<data.length;i++)
+                    {
+                        html+="<tr>"+
+                        "<td>"+data[i].bookName+"</td>"+
+                        "<td>"+data[i].bookAuthor+"</td>"+
+                        "<td>"+data[i].bookPublish+"</td>"+
+                        "<td>"+data[i].num+"</td>"+
+                        "<td>"+data[i].sum+"</td>"+
+                        "<td>"+data[i].bookType+"</td>"+
+                        "<td>"+data[i].isbn+"</td>"+
+                        "</tr>"
+                    };
 
-                    $("#sh23anzj").html(html);
+
+                    $("#allbook").html(html);
                 }
             })
 
@@ -40,7 +46,7 @@
     </script>
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="show()">
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
         <div class="container-fluid d-flex flex-column p-0">
@@ -51,7 +57,7 @@
             <hr class="sidebar-divider my-0">
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active"  onclick="show()"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
+                    <a class="nav-link active" onclick="show()"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
                     <a class="nav-link active" href="borrow.jsp"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
                     <a class="nav-link active" href="index.html"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
                     <a class="nav-link active" href="index.html"><i class="fas fa-clipboard-list"></i><span style="margin-left: 2px;">&nbsp;消息处理</span></a>
@@ -247,10 +253,7 @@
                                     <th>操作</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr id="sh23anzj">
-
-                                </tr>
+                                <tbody id="allbook">
 
                                 <tr>
                                     <td>《百年孤独》</td>
@@ -262,76 +265,7 @@
                                     <td>9787544253994<br></td>
                                     <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
                                 </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
-                                <tr>
-                                    <td>《百年孤独》</td>
-                                    <td>[哥伦比亚] 加西亚·马尔克斯<br></td>
-                                    <td>南海出版公司<br></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td class="text-left">国外文学</td>
-                                    <td>9787544253994<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -349,6 +283,7 @@
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
 <script src="assets/js/theme.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/3.0.2/vue.global.js"></script>
 </body>
 
 </html>

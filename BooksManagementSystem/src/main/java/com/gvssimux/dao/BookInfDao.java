@@ -1,6 +1,9 @@
 package com.gvssimux.dao;
 
 import com.gvssimux.pojo.BookInf;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 public interface BookInfDao {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +17,7 @@ public interface BookInfDao {
     int updateByPrimaryKeySelective(BookInf record);
 
     int updateByPrimaryKey(BookInf record);
+
+    @Select("select * from bookinf")
+    List<BookInf> selectAll();
 }

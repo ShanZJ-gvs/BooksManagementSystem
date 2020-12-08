@@ -1,6 +1,9 @@
 package com.gvssimux.dao;
 
 import com.gvssimux.pojo.User;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 public interface UserDao {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +17,7 @@ public interface UserDao {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    @Select("select * from user")
+    List<User> selectAll();
 }

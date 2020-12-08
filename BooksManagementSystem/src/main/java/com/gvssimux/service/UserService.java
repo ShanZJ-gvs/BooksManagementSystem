@@ -2,6 +2,8 @@ package com.gvssimux.service;
 
 import com.gvssimux.pojo.User;
 
+import java.util.List;
+
 public interface UserService {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface UserService {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    List<User> selectAll();
 }

@@ -6,11 +6,11 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Controller
 public class BookInfController {
@@ -19,21 +19,32 @@ public class BookInfController {
      * 根据id查询
      */
     @RequestMapping("/tobookinf")
-    public String toBookInf(){
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+    public String toBookInf(Model model){
 
         return "bookinf";
     }
 
 
     @ResponseBody
-    @RequestMapping("/allbook")
+    @RequestMapping("/onebook")
     public BookInf allBook(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
 
-        return bookInfServiceImpl.selectByPrimaryKey(6);
+        return bookInfServiceImpl.selectByPrimaryKey(2);
+    }
+
+    /**
+     * 全部查询
+     */
+    @ResponseBody
+    @RequestMapping("/allbook")
+    public List<BookInf> getAllBook(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+
+        System.out.println("执行成功=====》:"+bookInfServiceImpl.selectAll());
+        return bookInfServiceImpl.selectAll();
     }
 
 

@@ -4,6 +4,8 @@ package com.gvssimux.service;
 import com.gvssimux.dao.UserDao;
 import com.gvssimux.pojo.User;
 
+import java.util.List;
+
 public class UserServiceImpl implements UserService{
     private UserDao mapper;
 
@@ -29,6 +31,10 @@ public class UserServiceImpl implements UserService{
 
     public int updateByPrimaryKey(User record) {
         return mapper.updateByPrimaryKey(record);
+    }
+
+    public List<User> selectAll(){
+        return mapper.selectAll();
     }
 
 

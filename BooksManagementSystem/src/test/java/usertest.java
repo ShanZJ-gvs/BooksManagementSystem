@@ -20,6 +20,17 @@ public class usertest {
         System.out.println(user.selectByPrimaryKey(1));
     }
 
+    /**
+     * 查找全部用户
+     */
+    @Test
+    public void getAll(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserServiceImpl user = context.getBean("UserServiceImpl", UserServiceImpl.class);
+
+        System.out.println(user.selectAll());
+    }
+
 
     /**
      * 修改

@@ -2,6 +2,8 @@ package com.gvssimux.service;
 
 import com.gvssimux.pojo.BookInf;
 
+import java.util.List;
+
 public interface BookInfService {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface BookInfService {
     int updateByPrimaryKeySelective(BookInf record);
 
     int updateByPrimaryKey(BookInf record);
+
+    List<BookInf> selectAll();
 }

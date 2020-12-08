@@ -3,6 +3,8 @@ package com.gvssimux.service;
 import com.gvssimux.dao.BookInfDao;
 import com.gvssimux.pojo.BookInf;
 
+import java.util.List;
+
 public class BookInfServiceImpl implements BookInfService{
 
     private BookInfDao mapper;
@@ -29,6 +31,10 @@ public class BookInfServiceImpl implements BookInfService{
 
     public int updateByPrimaryKey(BookInf record) {
         return mapper.updateByPrimaryKey(record);
+    }
+
+    public List<BookInf> selectAll(){
+        return mapper.selectAll();
     }
 
     public void setMapper(BookInfDao mapper) {

@@ -4,13 +4,21 @@
   <resultMap id="BaseResultMap" type="com.gvssimux.pojo.User">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="uname" jdbcType="VARCHAR" property="uname" />
     <result column="user" jdbcType="VARCHAR" property="user" />
     <result column="pwd" jdbcType="VARCHAR" property="pwd" />
     <result column="sign" jdbcType="VARCHAR" property="sign" />
     <result column="time" jdbcType="INTEGER" property="time" />
   </resultMap>
+
+  <!--在当前Mapper.xml中使用二级缓存-->
+  <cache  eviction="FIFO"
+          flushInterval="60000"
+          size="512"
+          readOnly="true"/>
+
   <sql id="Base_Column_List">
-    id, userid, `user`, pwd, sign, `time`
+    id, userid, uname, `user`, pwd, sign, `time`
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -23,16 +31,19 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.User" useGeneratedKeys="true">
-    insert into user (userid, `user`, pwd, 
-      sign, `time`)
-    values (#{userid,jdbcType=VARCHAR}, #{user,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, 
-      #{sign,jdbcType=VARCHAR}, #{time,jdbcType=INTEGER})
+    insert into user (userid, uname, `user`, 
+      pwd, sign, `time`)
+    values (#{userid,jdbcType=VARCHAR}, #{uname,jdbcType=VARCHAR}, #{user,jdbcType=VARCHAR}, 
+      #{pwd,jdbcType=VARCHAR}, #{sign,jdbcType=VARCHAR}, #{time,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.User" useGeneratedKeys="true">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userid != null">
         userid,
+      </if>
+      <if test="uname != null">
+        uname,
       </if>
       <if test="user != null">
         `user`,
@@ -50,6 +61,9 @@
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="userid != null">
         #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="uname != null">
+        #{uname,jdbcType=VARCHAR},
       </if>
       <if test="user != null">
         #{user,jdbcType=VARCHAR},
@@ -71,6 +85,9 @@
       <if test="userid != null">
         userid = #{userid,jdbcType=VARCHAR},
       </if>
+      <if test="uname != null">
+        uname = #{uname,jdbcType=VARCHAR},
+      </if>
       <if test="user != null">
         `user` = #{user,jdbcType=VARCHAR},
       </if>
@@ -89,6 +106,7 @@
   <update id="updateByPrimaryKey" parameterType="com.gvssimux.pojo.User">
     update user
     set userid = #{userid,jdbcType=VARCHAR},
+      uname = #{uname,jdbcType=VARCHAR},
       `user` = #{user,jdbcType=VARCHAR},
       pwd = #{pwd,jdbcType=VARCHAR},
       sign = #{sign,jdbcType=VARCHAR},
