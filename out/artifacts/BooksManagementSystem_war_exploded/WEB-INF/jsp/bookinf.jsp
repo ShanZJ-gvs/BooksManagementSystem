@@ -58,10 +58,10 @@
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" onclick="show()"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
-                    <a class="nav-link active" href="borrow.jsp"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
-                    <a class="nav-link active" href="index.html"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/toborrow"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/touser"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
                     <a class="nav-link active" href="index.html"><i class="fas fa-clipboard-list"></i><span style="margin-left: 2px;">&nbsp;消息处理</span></a>
-                    <a class="nav-link active" href="userwant.jsp"><i class="fas fa-user-clock" style="width: 17px;"></i><span>增库申请</span></a></li>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/touserwant"><i class="fas fa-user-clock" style="width: 17px;"></i><span>增库申请</span></a></li>
             </ul>
             <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
@@ -283,7 +283,6 @@
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
 <script src="assets/js/theme.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/vue/3.0.2/vue.global.js"></script>
 </body>
 
 </html>

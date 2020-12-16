@@ -11,9 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Dashboard - Brand</title>
-    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="../../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 </head>
 <body id="page-top">
 <div id="wrapper">
@@ -26,11 +26,11 @@
             <hr class="sidebar-divider my-0">
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" href="bookinf.jsp"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
-                    <a class="nav-link active" href="borrow.jsp"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
-                    <a class="nav-link active" href="index.html"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/tobookinf"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
+                    <a class="nav-link active" onclick="show()"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/touser"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
                     <a class="nav-link active" href="index.html"><i class="fas fa-clipboard-list"></i><span style="margin-left: 2px;">&nbsp;消息处理</span></a>
-                    <a class="nav-link active" href="userwant.jsp"><i class="fas fa-user-clock" style="width: 17px;"></i><span>增库申请</span></a></li>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/touserwant"><i class="fas fa-user-clock" style="width: 17px;"></i><span>增库申请</span></a></li>
             </ul>            <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
     </nav>
@@ -90,7 +90,7 @@
                                      role="menu">
                                     <h6 class="dropdown-header">alerts center</h6>
                                     <a class="d-flex align-items-center dropdown-item" href="#">
-                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../../assets/img/avatars/avatar4.jpeg">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
                                             <div class="bg-success status-indicator"></div>
                                         </div>
                                         <div class="font-weight-bold">
@@ -99,7 +99,7 @@
                                         </div>
                                     </a>
                                     <a class="d-flex align-items-center dropdown-item" href="#">
-                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../../assets/img/avatars/avatar2.jpeg">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
                                             <div class="status-indicator"></div>
                                         </div>
                                         <div class="font-weight-bold">
@@ -108,7 +108,7 @@
                                         </div>
                                     </a>
                                     <a class="d-flex align-items-center dropdown-item" href="#">
-                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../../assets/img/avatars/avatar3.jpeg">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
                                             <div class="bg-warning status-indicator"></div>
                                         </div>
                                         <div class="font-weight-bold">
@@ -117,7 +117,7 @@
                                         </div>
                                     </a>
                                     <a class="d-flex align-items-center dropdown-item" href="#">
-                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../../assets/img/avatars/avatar5.jpeg">
+                                        <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
                                             <div class="bg-success status-indicator"></div>
                                         </div>
                                         <div class="font-weight-bold">
@@ -130,7 +130,7 @@
                         </li>
                         <div class="d-none d-sm-block topbar-divider"></div>
                         <li class="nav-item dropdown no-arrow" role="presentation">
-                            <div class="nav-item dropdown no-arrow"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="../../assets/img/avatars/avatar1.jpeg"></button>
+                            <div class="nav-item dropdown no-arrow"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></button>
                                 <div
                                         class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
                                     <a
@@ -245,9 +245,9 @@
             </div>
         </footer>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
-<script src="../../assets/js/jquery.min.js"></script>
-<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-<script src="../../assets/js/theme.js"></script>
+<script src="assets/js/theme.js"></script>
 </body>
 </html>
