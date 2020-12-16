@@ -11,29 +11,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dashboard - Brand</title>
+    <title>增库申请</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 </head>
 
+
 <body id="page-top">
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
         <div class="container-fluid d-flex flex-column p-0">
-            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="${pageContext.request.contextPath}">
+            <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="${pageContext.request.contextPath}/">
                 <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
                 <div class="sidebar-brand-text mx-3"><span>Hello单子健</span></div>
             </a>
             <hr class="sidebar-divider my-0">
             <ul class="nav navbar-nav text-light" id="accordionSidebar">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" href="bookinf.jsp"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
-                    <a class="nav-link active" href="borrow.jsp"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
-                    <a class="nav-link active" href="index.html"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
-                    <a class="nav-link active" href="index.html"><i class="fas fa-clipboard-list"></i><span style="margin-left: 2px;">&nbsp;消息处理</span></a>
-                    <a class="nav-link active" href="userwant.jsp"><i class="fas fa-user-clock" style="width: 17px;"></i><span>增库申请</span></a></li>
-            </ul>            <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/tobookinf"><i class="fas fa-book-open"></i><span style="margin-left: 4px;">图书库</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/toborrow"><i class="fas fa-grip-lines"></i><span style="filter: blur(0px) brightness(100%);margin-left: 3px;">历史借阅</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/touser"><i class="fas fa-user-cog"></i><span>用户管理</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/tomessage"><i class="fas fa-clipboard-list"></i><span style="margin-left: 2px;">&nbsp;消息处理</span></a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath}/touserwant"><i class="fas fa-user-clock" style="width: 17px;"></i><span>增库申请</span></a>
+                </li>
+            </ul>
+            <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
         </div>
     </nav>
     <div class="d-flex flex-column" id="content-wrapper">
@@ -132,7 +135,7 @@
                         </li>
                         <div class="d-none d-sm-block topbar-divider"></div>
                         <li class="nav-item dropdown no-arrow" role="presentation">
-                            <div class="nav-item dropdown no-arrow"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="../../assets/img/avatars/avatar1.jpeg"></button>
+                            <div class="nav-item dropdown no-arrow"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/touxiang.png"></button>
                                 <div
                                         class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
                                     <a
@@ -213,13 +216,13 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th style="width: 250px;">姓名</th>
+                                    <th style="width: 138px;">姓名</th>
                                     <th style="width: 250px;"><strong>&nbsp;书名</strong><br></th>
                                     <th style="width: 239px;"><strong>作者</strong></th>
                                     <th class="text-left" style="width: 250px;"><strong>出版商</strong><br></th>
-                                    <th class="text-center" style="width: 142px;"><strong>备注</strong><br></th>
+                                    <th class="text-center"><strong>备注</strong><br></th>
                                     <th class="text-left" style="width: 142px;">状态</th>
-                                    <th class="text-center" style="width: 60px;">操作</th>
+                                    <th class="text-center" style="width: 294px;">操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -230,7 +233,8 @@
                                     <td>南海出版公司<br></td>
                                     <td>xxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>xxxxxxxxxxxxxxxxxxx</td>
                                     <td>待处理<br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
+                                    <td><button class="btn btn-outline-info border rounded d-inline-flex" type="button" style="margin: 0px;margin-right: 2px;"><i class="fa fa-check"></i></button><button class="btn btn-outline-danger text-center border rounded d-inline-flex"
+                                                                                                                                                                                                           type="button" style="width: 40px;margin-right: 2px;"><i class="fa fa-times"></i></button><button class="btn btn-outline-link border rounded d-inline-flex" type="button" style="height: 30px;width: 40px;padding-left: 12px;">...</button></td>
                                 </tr>
                                 </tbody>
                             </table>

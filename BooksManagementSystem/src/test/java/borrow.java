@@ -33,4 +33,17 @@ public class borrow {
         borrowmapper.insertSelective(borrow);
 
     }
+
+
+    /**
+     * 全部查询
+     */
+    @Test
+    public void getAll(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
+
+        System.out.println("执行成功=====》:"+mapper.selectAll());
+    }
+
 }

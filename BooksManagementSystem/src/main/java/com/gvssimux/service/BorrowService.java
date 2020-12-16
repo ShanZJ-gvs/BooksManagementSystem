@@ -1,6 +1,9 @@
 package com.gvssimux.service;
 
+import com.gvssimux.pojo.BookInf;
 import com.gvssimux.pojo.Borrow;
+
+import java.util.List;
 
 public interface BorrowService {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +17,6 @@ public interface BorrowService {
     int updateByPrimaryKeySelective(Borrow record);
 
     int updateByPrimaryKey(Borrow record);
+
+    List<Borrow> selectAll();
 }

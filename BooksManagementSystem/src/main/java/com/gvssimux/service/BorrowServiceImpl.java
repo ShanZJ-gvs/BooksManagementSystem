@@ -3,6 +3,8 @@ package com.gvssimux.service;
 import com.gvssimux.dao.BorrowDao;
 import com.gvssimux.pojo.Borrow;
 
+import java.util.List;
+
 public class BorrowServiceImpl implements BorrowService{
 
     private BorrowDao mapper;
@@ -39,5 +41,10 @@ public class BorrowServiceImpl implements BorrowService{
     @Override
     public int updateByPrimaryKey(Borrow record) {
         return mapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public List<Borrow> selectAll() {
+        return mapper.selectAll();
     }
 }

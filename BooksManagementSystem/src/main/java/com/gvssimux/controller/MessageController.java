@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class UserController {
+public class MessageController {
 
-    @RequestMapping("/touser")
+    @RequestMapping("/tomessage")
     public String toBorrow(){
 
-        return "user";
+        return "message";
     }
 }

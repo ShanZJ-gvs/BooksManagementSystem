@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 单子健
-  Date: 2020/12/6
-  Time: 16:17
+  Date: 2020/12/16
+  Time: 17:09
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,39 +10,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>历史借阅</title>
+    <title>消息处理</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <script>
-            function show() {
-                $.post({
-                    url:"${pageContext.request.contextPath}/allbook",
-                    data:{},
-                    success:function (data) {
-                        var html = "";
-                        for (var i=0;i<data.length;i++)
-                        {
-                            html+="<tr>"+
-                                "<td>"+data[i].bookName+"</td>"+
-                                "<td>"+data[i].bookAuthor+"</td>"+
-                                "<td>"+data[i].bookPublish+"</td>"+
-                                "<td>"+data[i].num+"</td>"+
-                                "<td>"+data[i].sum+"</td>"+
-                                "<td>"+data[i].bookType+"</td>"+
-                                "<td>"+data[i].isbn+"</td>"+
-                                "</tr>"
-                        };
-
-
-                        $("#allbook").html(html);
-                    }
-                })
-
-            }
-        </script>
 </head>
-
 <body id="page-top">
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
@@ -241,26 +213,25 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th style="width: 122px;">姓名</th>
-                                    <th style="width: 229px;"><strong>&nbsp;书名</strong><br></th>
-                                    <th style="width: 113px;">状态</th>
-                                    <th class="text-center" style="width: 131px;"><strong>申请</strong></th>
-                                    <th class="text-center" style="width: 147px;"><strong>取走</strong></th>
-                                    <th class="text-center" style="width: 142px;"><strong>应归还</strong><br></th>
-                                    <th class="text-center" style="width: 142px;"><strong>归还</strong><br></th>
-                                    <th class="text-center">操作</th>
+                                    <th style="width: 250px;">姓名</th>
+                                    <th style="width: 250px;"><strong>&nbsp;书名</strong><br></th>
+                                    <th style="width: 239px;">剩余</th>
+                                    <th class="text-left" style="width: 250px;">状态</th>
+                                    <th class="text-center" style="width: 142px;">申请时间</th>
+                                    <th class="text-left" style="width: 142px;">状态</th>
+                                    <th class="text-center" style="width: 198px;">操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>让让</td>
-                                    <td>《百年孤独》</td>
-                                    <td>待借出<br></td>
-                                    <td>2020-12-06</td>
-                                    <td><br></td>
-                                    <td><br></td>
-                                    <td><br></td>
-                                    <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
+                                    <td><strong>霍乱时期的爱情</strong><br></td>
+                                    <td>3<br></td>
+                                    <td>待借出</td>
+                                    <td>2020-12-13</td>
+                                    <td>待处理<br></td>
+                                    <td><button class="btn btn-outline-info border rounded d-inline-flex" type="button" style="margin: 0px;margin-right: 2px;"><i class="fa fa-check"></i></button><button class="btn btn-outline-danger text-center border rounded d-inline-flex"
+                                                                                                                                                                                                           type="button" style="width: 40px;margin-right: 2px;"><i class="fa fa-times"></i></button><button class="btn btn-outline-link border rounded d-inline-flex" type="button" style="height: 30px;width: 40px;padding-left: 12px;">...</button></td>
                                 </tr>
                                 </tbody>
                             </table>
