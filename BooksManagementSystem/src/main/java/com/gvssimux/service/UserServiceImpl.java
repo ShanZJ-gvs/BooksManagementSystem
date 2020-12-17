@@ -2,6 +2,7 @@ package com.gvssimux.service;
 
 
 import com.gvssimux.dao.UserDao;
+import com.gvssimux.pojo.BookInf;
 import com.gvssimux.pojo.User;
 
 import java.util.List;
@@ -33,8 +34,14 @@ public class UserServiceImpl implements UserService{
         return mapper.updateByPrimaryKey(record);
     }
 
+    @Override
     public List<User> selectAll(){
         return mapper.selectAll();
+    }
+
+    @Override
+    public User selectByUserId(String userid) {
+        return mapper.selectByUserId(userid);
     }
 
 

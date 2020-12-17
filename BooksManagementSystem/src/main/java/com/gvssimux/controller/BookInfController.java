@@ -1,7 +1,9 @@
 package com.gvssimux.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.gvssimux.pojo.BookInf;
 import com.gvssimux.service.BookInfServiceImpl;
+import com.gvssimux.util.JsonUtil;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,7 +18,7 @@ import java.util.List;
 public class BookInfController {
 
     /**
-     * 根据id查询
+     * 跳转页面
      */
     @RequestMapping("/tobookinf")
     public String toBookInf(Model model){
@@ -39,18 +41,13 @@ public class BookInfController {
      */
     @ResponseBody
     @RequestMapping("/allbook")
-    public List<BookInf> getAllBook(){
+    public String getAllBook() throws JsonProcessingException {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
-
         System.out.println("执行成功=====》:"+bookInfServiceImpl.selectAll());
-        return bookInfServiceImpl.selectAll();
+        JsonUtil jsonUtil = new JsonUtil();
+        return jsonUtil.getJson(bookInfServiceImpl.selectAll());
     }
-
-
-
-
-
 
 
 }

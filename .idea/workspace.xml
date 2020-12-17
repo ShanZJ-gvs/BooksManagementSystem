@@ -34,26 +34,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/webPojo/BookBorrUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/webPojo/BorrUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/webPojo/UserWantUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserWantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserWantServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/MessageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserWantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserWantDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/util/GetUUID.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/util/GetUUID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +83,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="jsf" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -129,6 +149,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.37">
+    <configuration name="GetUUID" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gvssimux.util.GetUUID" />
+      <module name="BooksManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gvssimux.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -142,51 +175,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="borrow.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="borrow.get2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="borrow" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="METHOD_NAME" value="get2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="borrow.getAllBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="borrow.get3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="borrow" />
-      <option name="METHOD_NAME" value="getAllBook" />
+      <option name="METHOD_NAME" value="get3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.addBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BooksManagementSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="addBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.getAllBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BooksManagementSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="getAllBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="usertest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="usertest.get2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="usertest" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="METHOD_NAME" value="get2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="usertest.get4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksManagementSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="usertest" />
+      <option name="METHOD_NAME" value="get4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -388,20 +411,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.usertest.getAll" />
-      <item itemvalue="JUnit.test.getAllBook" />
-      <item itemvalue="JUnit.test.addBook" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
-      <item itemvalue="JUnit.borrow.getAllBook" />
-      <item itemvalue="JUnit.borrow.getAll" />
+      <item itemvalue="JUnit.usertest.get2" />
+      <item itemvalue="JUnit.borrow.get2" />
+      <item itemvalue="应用程序.GetUUID" />
+      <item itemvalue="JUnit.borrow.get3" />
+      <item itemvalue="JUnit.usertest.get4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test.getAllBook" />
-        <item itemvalue="JUnit.borrow.getAll" />
-        <item itemvalue="JUnit.borrow.getAllBook" />
-        <item itemvalue="JUnit.test.addBook" />
-        <item itemvalue="JUnit.usertest.getAll" />
+        <item itemvalue="JUnit.usertest.get4" />
+        <item itemvalue="JUnit.borrow.get3" />
+        <item itemvalue="应用程序.GetUUID" />
+        <item itemvalue="JUnit.borrow.get2" />
+        <item itemvalue="JUnit.usertest.get2" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +458,7 @@
       <workItem from="1607327197317" duration="405000" />
       <workItem from="1607327855622" duration="2278000" />
       <workItem from="1607433839008" duration="5543000" />
-      <workItem from="1608109613054" duration="9442000" />
+      <workItem from="1608109613054" duration="28486000" />
     </task>
     <servers />
   </component>

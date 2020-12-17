@@ -10,7 +10,22 @@
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!--1.注解驱动-->
-    <mvc:annotation-driven/>
+    <!--<mvc:annotation-driven/>-->
+    <!--springmvc 统一解决json中文乱码问题-->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8"/>
+            </bean>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="objectMapper">
+                    <bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+                        <property name="failOnEmptyBeans" value="false"/>
+                    </bean>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
     <!--2.静态资源过滤-->
     <mvc:default-servlet-handler/>
     <!--3.扫描包：controller-->
@@ -21,4 +36,5 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
 </beans>

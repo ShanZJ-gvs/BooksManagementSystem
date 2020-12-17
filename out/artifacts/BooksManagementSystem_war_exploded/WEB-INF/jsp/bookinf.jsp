@@ -16,23 +16,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 
-    <%--<script>
+    <script>
         function show() {
             $.post({
                 url:"${pageContext.request.contextPath}/allbook",
                 data:{},
-                success:function (data) {
+                dataType:"json",
+                success:function (json) {
                     var html = "";
-                    for (var i=0;i<data.length;i++)
+                    for (var i=0;i<json.length;i++)
                     {
                         html+="<tr>"+
-                            "<td>"+data[i].bookName+"</td>"+
-                            "<td>"+data[i].bookAuthor+"</td>"+
-                            "<td>"+data[i].bookPublish+"</td>"+
-                            "<td>"+data[i].num+"</td>"+
-                            "<td>"+data[i].sum+"</td>"+
-                            "<td>"+data[i].bookType+"</td>"+
-                            "<td>"+data[i].isbn+"</td>"
+                            "<td>"+json[i].bookName+"</td>"+
+                            "<td>"+json[i].bookAuthor+"</td>"+
+                            "<td>"+json[i].bookPublish+"</td>"+
+                            "<td>"+json[i].num+"</td>"+
+                            "<td>"+json[i].sum+"</td>"+
+                            "<td>"+json[i].bookType+"</td>"+
+                            "<td>"+json[i].isbn+"</td>"+
+                            "<td>"+
+                                '<button class="btn btn-info" type="submit" style="height: 29px;">...</button>'+
+                            "</td>"+
                         "</tr>"
                     };
 
@@ -42,12 +46,12 @@
             })
 
         }
-    </script>--%>
+    </script>
 </head>
 
 
 
-<body id="page-top">
+<body id="page-top" onblur="show()">
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
         <div class="container-fluid d-flex flex-column p-0">
@@ -255,7 +259,7 @@
                                     <th>操作</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="allbook">
                                 <tr>
                                     <td>《百年孤独》</td>
                                     <td>[哥伦比亚] 加西亚·马尔克斯<br></td>

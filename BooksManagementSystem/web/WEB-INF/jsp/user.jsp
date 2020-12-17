@@ -14,9 +14,38 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+
+    <script>
+        function show() {
+            $.post({
+                url:"${pageContext.request.contextPath}/alluser",
+                data:{},
+                dataType:"json",
+                success:function (json) {
+                    var html = "";
+                    for (var i=0;i<json.length;i++)
+                    {
+
+                        html+="<tr>"+
+                            '<td style="padding-left: 26px;">'+json[i].uname+
+                            '<input type="checkbox" style="margin-left: -49px;"></td>'+
+                            "<td>"+json[i].sign+"</td>"+
+                            "<td>"+json[i].time+"</td>"+
+                            '<td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>'+
+                            "</td>"+
+                            "</tr>"
+                    };
+
+
+                    $("#alluser").html(html);
+                }
+            })
+
+        }
+    </script>
 </head>
 
-<body id="page-top">
+<body id="page-top" onblur="show()">
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
         <div class="container-fluid d-flex flex-column p-0">
@@ -220,13 +249,13 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th style="width: 250px;">用户名</th>
+                                    <th style="width: 130px;">用户名</th>
                                     <th style="width: 250px;">用户身份</th>
                                     <th style="width: 250px;">借阅次数</th>
                                     <th style="width: 250px;">详细</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="alluser">
                                 <tr>
                                     <td style="padding-left: 26px;">让让<input type="checkbox" style="margin-left: -49px;"></td>
                                     <td><strong>霍乱时期的爱情</strong><br></td>

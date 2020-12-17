@@ -46,4 +46,28 @@ public class borrow {
         System.out.println("执行成功=====》:"+mapper.selectAll());
     }
 
+
+    /**
+     * 两表查询
+     */
+    @Test
+    public void get2(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
+
+        System.out.println("执行成功=====》:"+mapper.selectAll());
+    }
+
+
+    /**
+     * 三表查询
+     */
+    @Test
+    public void get3(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
+
+        System.out.println("执行成功=====》:"+mapper.get3Table());
+    }
+
 }

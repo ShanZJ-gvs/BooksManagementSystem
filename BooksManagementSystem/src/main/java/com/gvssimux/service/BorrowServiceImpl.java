@@ -2,6 +2,8 @@ package com.gvssimux.service;
 
 import com.gvssimux.dao.BorrowDao;
 import com.gvssimux.pojo.Borrow;
+import com.gvssimux.pojo.webPojo.BookBorrUser;
+import com.gvssimux.pojo.webPojo.BorrUser;
 
 import java.util.List;
 
@@ -44,7 +46,12 @@ public class BorrowServiceImpl implements BorrowService{
     }
 
     @Override
-    public List<Borrow> selectAll() {
+    public List<BorrUser> selectAll() {
         return mapper.selectAll();
+    }
+
+    @Override
+    public List<BookBorrUser> get3Table() {
+        return mapper.get3Table();
     }
 }

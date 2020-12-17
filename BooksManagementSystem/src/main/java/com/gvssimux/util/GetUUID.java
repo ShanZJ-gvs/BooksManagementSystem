@@ -14,6 +14,9 @@ public final class GetUUID {
         return UUID;
     }
 
+    public static void main(String[] args) {
+        System.out.println(get());
+    }
 
 
 
