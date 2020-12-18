@@ -45,7 +45,7 @@
     </script>
 </head>
 
-<body id="page-top" onblur="show()">
+<body id="page-top" onpageshow="show()">
 <div id="wrapper">
     <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
         <div class="container-fluid d-flex flex-column p-0">

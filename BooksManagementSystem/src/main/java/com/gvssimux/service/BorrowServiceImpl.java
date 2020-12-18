@@ -4,6 +4,7 @@ import com.gvssimux.dao.BorrowDao;
 import com.gvssimux.pojo.Borrow;
 import com.gvssimux.pojo.webPojo.BookBorrUser;
 import com.gvssimux.pojo.webPojo.BorrUser;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -53,5 +54,10 @@ public class BorrowServiceImpl implements BorrowService{
     @Override
     public List<BookBorrUser> get3Table() {
         return mapper.get3Table();
+    }
+
+    @Override
+    public int getPerSum(String month){
+        return mapper.getPerSum(month);
     }
 }

@@ -5,6 +5,7 @@ import com.gvssimux.pojo.BookInf;
 import com.gvssimux.pojo.Borrow;
 import com.gvssimux.pojo.webPojo.BookBorrUser;
 import com.gvssimux.pojo.webPojo.BorrUser;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -27,4 +28,7 @@ public interface BorrowService {
 
     //三表关联查询user和borrow和bookinf
     List<BookBorrUser> get3Table();
+
+    //查询每月借书的总数，以申请时间为准
+    int getPerSum(String month);
 }

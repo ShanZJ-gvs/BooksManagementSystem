@@ -4,6 +4,7 @@ import com.gvssimux.pojo.BookInf;
 import com.gvssimux.pojo.Borrow;
 import com.gvssimux.pojo.webPojo.BookBorrUser;
 import com.gvssimux.pojo.webPojo.BorrUser;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -82,6 +83,10 @@ public interface BorrowDao {
             " OR\n" +
             "\tborrow.`status` = \"逾期\"")
     List<BookBorrUser> get3Table();
+
+    //查询每月借书的总数，以申请时间为准
+    @Select("SELECT COUNT(*) FROM borrow WHERE borrow.starttime LIKE #{month}")
+    int getPerSum(@Param("month") String month);
 
 
 

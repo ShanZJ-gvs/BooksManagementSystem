@@ -9,7 +9,9 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class borrow {
 
@@ -69,5 +71,30 @@ public class borrow {
 
         System.out.println("执行成功=====》:"+mapper.get3Table());
     }
+
+
+
+    /**
+     * 查询每月的借阅总数
+     */
+    @Test
+    public void get4(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
+
+        int[] ints = new int[12];
+        for (int i = 0; i < 12; i++) {
+            int j = i +1;
+            ints[i] = mapper.getPerSum("%-"+j+"-%");
+        }
+
+        for (int i = 0; i < ints.length; i++) {
+            System.out.println("数组==》"+ ints[i]);
+        }
+
+        System.out.println("执行成功=====》:"+mapper.getPerSum("%-11-%"));
+    }
+
+
 
 }
