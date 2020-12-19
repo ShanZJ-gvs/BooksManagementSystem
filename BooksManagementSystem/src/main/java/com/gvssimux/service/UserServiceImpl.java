@@ -44,6 +44,11 @@ public class UserServiceImpl implements UserService{
         return mapper.selectByUserId(userid);
     }
 
+    @Override
+    public int getUserNum() {
+        return mapper.getUserNum();
+    }
+
 
     public void setMapper(UserDao mapper) {
         this.mapper = mapper;

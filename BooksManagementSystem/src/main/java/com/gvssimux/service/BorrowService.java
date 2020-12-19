@@ -8,6 +8,7 @@ import com.gvssimux.pojo.webPojo.BorrUser;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.Date;
 import java.util.List;
 
 public interface BorrowService {
@@ -31,4 +32,10 @@ public interface BorrowService {
 
     //查询每月借书的总数，以申请时间为准
     int getPerSum(String month);
+
+    //查询借阅总量
+    int getBorrowNum();
+
+    //查询逾期总量
+    int getOverNum(Date date);
 }

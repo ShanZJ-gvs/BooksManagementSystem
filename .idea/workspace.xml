@@ -34,25 +34,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BorrowServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/borrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OSGUI" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,7 +106,7 @@
     <property name="project.structure.last.edited" value="SDK" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.42068964" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -150,11 +149,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="borrow.get2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="borrow.get10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="borrow" />
-      <option name="METHOD_NAME" value="get2" />
+      <option name="METHOD_NAME" value="get10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -386,20 +398,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.borrow.get2" />
       <item itemvalue="JUnit.borrow.get3" />
       <item itemvalue="JUnit.usertest.get4" />
       <item itemvalue="JUnit.borrow.get4" />
+      <item itemvalue="JUnit.borrow.get10" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
       <item itemvalue="应用程序.GetUUID" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.borrow.get4" />
         <item itemvalue="JUnit.borrow.get3" />
+        <item itemvalue="JUnit.borrow.get10" />
+        <item itemvalue="JUnit.borrow.get4" />
         <item itemvalue="JUnit.usertest.get4" />
         <item itemvalue="应用程序.GetUUID" />
-        <item itemvalue="JUnit.borrow.get2" />
       </list>
     </recent_temporary>
   </component>
@@ -438,6 +450,8 @@
       <workItem from="1608269388261" duration="387000" />
       <workItem from="1608271984398" duration="2437000" />
       <workItem from="1608274800108" duration="281000" />
+      <workItem from="1608349496421" duration="8431000" />
+      <workItem from="1608388900192" duration="397000" />
     </task>
     <servers />
   </component>

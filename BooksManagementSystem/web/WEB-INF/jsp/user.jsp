@@ -40,8 +40,36 @@
                     $("#alluser").html(html);
                 }
             })
-
         }
+
+        function remove() {
+            $.post({
+                url:"${pageContext.request.contextPath}/removeuser",
+                data:{},
+                dataType:"json",
+                success:function (json) {
+                    var html = "";
+                    for (var i=0;i<json.length;i++)
+                    {
+
+                        html+="<tr>"+
+                            '<td style="padding-left: 26px;">'+json[i].uname+
+                            '<input type="checkbox" style="margin-left: -49px;"></td>'+
+                            "<td>"+json[i].sign+"</td>"+
+                            "<td>"+json[i].time+"</td>"+
+                            '<td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>'+
+                            "</td>"+
+                            "</tr>"
+                    };
+
+
+                    $("#alluser").html(html);
+                }
+            })
+        }
+
+        <span id="tipStep2" class="fl" style="display:none">
+
     </script>
 </head>
 

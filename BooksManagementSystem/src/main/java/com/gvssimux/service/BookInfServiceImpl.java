@@ -37,6 +37,11 @@ public class BookInfServiceImpl implements BookInfService{
         return mapper.selectAll();
     }
 
+    @Override
+    public int getBookNum() {
+        return mapper.getBookNum();
+    }
+
     public void setMapper(BookInfDao mapper) {
         this.mapper = mapper;
     }

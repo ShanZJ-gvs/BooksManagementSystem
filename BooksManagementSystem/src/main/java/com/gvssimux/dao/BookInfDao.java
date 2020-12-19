@@ -20,4 +20,8 @@ public interface BookInfDao {
 
     @Select("select * from bookinf")
     List<BookInf> selectAll();
+
+    //查询书库数量
+    @Select("SELECT COUNT(*) FROM `bookinf`")
+    int getBookNum();
 }

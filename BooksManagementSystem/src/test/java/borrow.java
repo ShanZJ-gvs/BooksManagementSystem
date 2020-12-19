@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.gvssimux.pojo.BookInf;
 import com.gvssimux.pojo.Borrow;
 import com.gvssimux.pojo.User;
@@ -5,6 +6,7 @@ import com.gvssimux.service.BookInfServiceImpl;
 import com.gvssimux.service.BorrowServiceImpl;
 import com.gvssimux.service.UserServiceImpl;
 import com.gvssimux.util.GetUUID;
+import com.gvssimux.util.JsonUtil;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -70,6 +72,21 @@ public class borrow {
         BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
 
         System.out.println("执行成功=====》:"+mapper.get3Table());
+    }
+
+    @Test
+    public void get10() throws JsonProcessingException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserServiceImpl mapper = context.getBean("UserServiceImpl", UserServiceImpl.class);
+        BorrowServiceImpl mapper2 = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
+        BookInfServiceImpl mapper3 = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+
+        Date date = new Date();
+        //int[] ints = {mapper3.getBookNum(), mapper.getUserNum(), mapper2.getBorrowNum(),mapper2.getOverNum(date)};
+        JsonUtil jsonUtil = new JsonUtil();
+        //System.out.println(jsonUtil.getJson(ints));
+        System.out.println(jsonUtil.getJson(mapper2.getOverNum(date)));
+
     }
 
 

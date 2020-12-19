@@ -11,12 +11,6 @@
     <result column="time" jdbcType="INTEGER" property="time" />
   </resultMap>
 
-  <!--在当前Mapper.xml中使用二级缓存-->
-  <cache  eviction="FIFO"
-          flushInterval="60000"
-          size="512"
-          readOnly="true"/>
-
   <sql id="Base_Column_List">
     id, userid, uname, `user`, pwd, sign, `time`
   </sql>

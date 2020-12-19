@@ -27,4 +27,8 @@ public interface UserDao {
     //根据Id查询
     @Select("select * from user where userid = #{userid}")
     User selectByUserId(@Param("userid") String userid);
+
+    //查询用户数量
+    @Select("SELECT COUNT(*) FROM\n `user`")
+    int getUserNum();
 }

@@ -26,6 +26,9 @@ public interface UserService {
     //根据Id查询
     User selectByUserId(String userid);
 
+    //查询用户数量
+    int getUserNum();
+
 
 
 }

@@ -1,6 +1,7 @@
 package com.gvssimux.service;
 
 import com.gvssimux.pojo.BookInf;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -18,4 +19,7 @@ public interface BookInfService {
     int updateByPrimaryKey(BookInf record);
 
     List<BookInf> selectAll();
+
+    //查询书库数量
+    int getBookNum();
 }
