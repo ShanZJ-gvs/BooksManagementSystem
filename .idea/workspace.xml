@@ -34,23 +34,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/BookInfDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/BookInfDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
     </list>
     <list id="8e52336d-2890-4712-bf05-16a0bd2611d2" name="12-20细节看readme3" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +128,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -453,7 +448,7 @@
       <workItem from="1608388900192" duration="397000" />
       <workItem from="1608460581642" duration="12000" />
       <workItem from="1608460639829" duration="161000" />
-      <workItem from="1608460918027" duration="1181000" />
+      <workItem from="1608460918027" duration="1509000" />
     </task>
     <servers />
   </component>
