@@ -302,8 +302,8 @@
                                 <tbody id="alluser">
                                 <tr>
                                     <td style="padding-left: 26px;">让让<input type="checkbox" style="margin-left: -49px;"></td>
-                                    <td><strong>霍乱时期的爱情</strong><br></td>
-                                    <td><strong>50</strong></td>
+                                    <td><strong>user</strong><br></td>
+                                    <td><strong>0</strong></td>
                                     <td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>
                                 </tr>
                                 </tbody>
