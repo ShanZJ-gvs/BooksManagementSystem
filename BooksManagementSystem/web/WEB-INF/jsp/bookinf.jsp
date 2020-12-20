@@ -18,6 +18,22 @@
 
     <script>
         function show() {
+            /*******-----*********/
+            $.post({
+                url:"${pageContext.request.contextPath}/nav",
+                data:{},
+                dataType:"json",
+                success:function (json) {
+
+                    $("#booknum").html(json[0]);
+                    $("#usernum").html(json[1]);
+                    $("#borrownum").html(json[2]);
+                    $("#overnum").html(json[3]);
+
+                }
+            })
+            /***********************/
+
             $.post({
                 url:"${pageContext.request.contextPath}/allbook",
                 data:{},
@@ -187,7 +203,7 @@
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
                                         <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>图书数量</span></div>
-                                        <div class="text-dark font-weight-bold h5 mb-0"><span>40,000</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span id="booknum">0</span></div>
                                     </div>
                                     <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
                                 </div>
@@ -200,7 +216,7 @@
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
                                         <div class="text-uppercase text-success font-weight-bold text-xs mb-1"><span>用户数量</span></div>
-                                        <div class="text-dark font-weight-bold h5 mb-0"><span>5200</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span id="usernum">0</span></div>
                                     </div>
                                     <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
                                 </div>
@@ -215,7 +231,7 @@
                                         <div class="text-uppercase text-info font-weight-bold text-xs mb-1"><span>借阅次数</span></div>
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
-                                                <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span>3200</span></div>
+                                                <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span id="borrownum">0</span></div>
                                             </div>
                                             <div class="col">
                                                 <div class="progress progress-sm" style="filter: saturate(101%);">
@@ -235,7 +251,7 @@
                                 <div class="row align-items-center no-gutters">
                                     <div class="col mr-2">
                                         <div class="text-uppercase text-warning font-weight-bold text-xs mb-1"><span>当前逾期</span></div>
-                                        <div class="text-dark font-weight-bold h5 mb-0"><span>52</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span id="overnum" >0</span></div>
                                     </div>
                                     <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
                                 </div>
