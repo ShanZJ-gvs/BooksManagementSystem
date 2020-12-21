@@ -22,24 +22,7 @@
     <script>
         function show() {
 
-            /********--------**********/
-            $.post({
-                url:"${pageContext.request.contextPath}/permonth",
-                data:{},
-                dataType:"json",
-                success:function (json) {
-
-                    //var html = '<canvas id="permonth" data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sept&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;10000&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;,&quot;23444&quot;,&quot;15089&quot;,&quot;22323&quot;,&quot;14555&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;position&quot;:&quot;top&quot;,&quot;reverse&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas>';
-                    //var html = '<canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sept&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;10000&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;,&quot;23444&quot;,&quot;15089&quot;,&quot;22323&quot;,&quot;14555&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;position&quot;:&quot;top&quot;,&quot;reverse&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas>';
-                    //var a = $("#permonth");
-                    //$("#permonth").html(html);
-                    //alert(a);
-
-                }
-            })
-            /***********************/
-
-            /*******-----*********/
+            /*******---顶部的card----*********/
             $.post({
                 url:"${pageContext.request.contextPath}/nav",
                 data:{},
@@ -56,9 +39,43 @@
             /***********************/
 
 
+            /*******---最下面的的canvas--******/
+            $.post({
+                url:"${pageContext.request.contextPath}/waitout",
+                data:{},
+                dataType:"json",
+                success:function (json) {
+                    var html = "";
+                    var j = 1;
+                    for (var i=0;i<json.length;i++)
+                    {
+
+                        html+="<li class='list-group-item'><div class='row align-items-center no-gutters'>"+
+                            "<div class='col mr-2'><h6 class='mb-0'><strong>"+json[i].bookname+"</strong></h6><span class='text-xs'>"+json[i].starttime+"</span></div>"+
+                            "<div class='col-auto'><div class='custom-control custom-checkbox'>"+
+                            "<input class='custom-control-input' type='checkbox' id='formCheck-"+j+"'><label class='custom-control-label' for='formCheck-"+j+"'></label></div>"+
+                            "</div></div></li>"
+                        j = j+1;
+                            /*<li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <h6 class="mb-0"><strong>《百年孤独》</strong></h6><span class="text-xs">10:30 AM</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-1"><label class="custom-control-label" for="formCheck-1"></label></div>
+                                    </div>
+                                </div>
+                            </li>*/
+
+                    };
+
+                    $("#card3").html(html);
+                }
+            })
+            /**********************************/
 
 
-            /*******-----------------******/
+            /*******---左边的canvas--******/
             $.post({
                 url:"${pageContext.request.contextPath}/permonth",
                 data:{},
@@ -117,7 +134,7 @@
             /**********************************/
 
 
-            /*******-----------------******/
+            /*******--------右边边的canvas---------******/
             $.post({
                 url:"${pageContext.request.contextPath}/bookindex",
                 data:{},
@@ -408,11 +425,12 @@
                                 <div class="col-xl-2"><button class="btn btn-outline-primary" type="button"><i class="fa fa-times"></i></button></div>
                             </div>
                             </div>
-                            <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush" id="card3">
                                 <li class="list-group-item">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col mr-2">
-                                            <h6 class="mb-0"><strong>《百年孤独》</strong></h6><span class="text-xs">10:30 AM</span></div>
+                                            <h6 class="mb-0"><strong>《百年孤独》</strong></h6><span class="text-xs">10:30 AM</span>
+                                        </div>
                                         <div class="col-auto">
                                             <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-1"><label class="custom-control-label" for="formCheck-1"></label></div>
                                         </div>

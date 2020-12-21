@@ -29,4 +29,16 @@ public class MessageController {
         return jsonUtil.getJson(mapper.get3Table(),"yyyy-MM-dd HH:mm:ss");
 
     }
+
+    @ResponseBody
+    @RequestMapping("/waitout")
+    public String waitout() throws JsonProcessingException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
+        System.out.println("执行成功=====》:"+mapper.get3Table2());
+
+        JsonUtil jsonUtil = new JsonUtil();
+        return jsonUtil.getJson(mapper.get3Table2(),"yyyy-MM-dd HH:mm:ss");
+
+    }
 }

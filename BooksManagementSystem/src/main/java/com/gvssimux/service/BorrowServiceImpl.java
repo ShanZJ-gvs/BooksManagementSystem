@@ -58,6 +58,11 @@ public class BorrowServiceImpl implements BorrowService {
     }
 
     @Override
+    public List<BookBorrUser> get3Table2() {
+        return mapper.get3Table2();
+    }
+
+    @Override
     public int getPerSum(String month) {
         return mapper.getPerSum(month);
     }

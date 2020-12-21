@@ -55,6 +55,12 @@ public interface BorrowDao {
             " OR borrow.`status` = '逾期'")
     List<BookBorrUser> get3Table();
 
+    //三表关联查询user和borrow和bookinf
+    @Select("SELECT bookinf.book_author,  bookinf.book_publish,  bookinf.book_type,  bookinf.book_introduction,  bookinf.money,  bookinf.sum,  bookinf.num,  borrow.borrowid,  borrow.bookname,  borrow.isbn,  borrow.`status`,  borrow.starttime,  borrow.starttime2,  borrow.endtime2,  borrow.endtime,  `user`.uname,  `user`.`user`,  `user`.sign,  borrow.userid\n" +
+            "FROM borrow INNER JOIN `user` ON borrow.userid = `user`.userid INNER JOIN bookinf ON  \tbookinf.ISBN = borrow.isbn\n" +
+            "WHERE borrow.`status` = '待借出'")
+    List<BookBorrUser> get3Table2();
+
     //查询每月借书的总数，以申请时间为准
     @Select("SELECT COUNT(*) FROM borrow WHERE borrow.starttime LIKE #{month}")
     int getPerSum(@Param("month") String month);

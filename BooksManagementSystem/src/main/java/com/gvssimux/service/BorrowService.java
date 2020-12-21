@@ -30,6 +30,9 @@ public interface BorrowService {
     //三表关联查询user和borrow和bookinf
     List<BookBorrUser> get3Table();
 
+    //三表关联查询user和borrow和bookinf
+    List<BookBorrUser> get3Table2();
+
     //查询每月借书的总数，以申请时间为准
     int getPerSum(String month);
 
