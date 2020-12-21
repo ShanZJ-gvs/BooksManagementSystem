@@ -70,4 +70,12 @@ public interface BorrowDao {
     int getOverNum(Date date);
 
 
+    //待归还数量
+    @Select("SELECT COUNT(borrow.`status`) FROM borrow WHERE borrow.`status` = '待归还'")
+    int getOutBookNum(Date date);
+
+
+
+
+
 }

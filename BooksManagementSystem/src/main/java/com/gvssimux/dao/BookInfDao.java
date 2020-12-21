@@ -24,4 +24,9 @@ public interface BookInfDao {
     //查询书库数量
     @Select("SELECT COUNT(*) FROM `bookinf`")
     int getBookNum();
+
+    //查询书库剩余数量
+    @Select("SELECT SUM(bookinf.num) FROM bookinf")
+    int getBookHave();
+
 }

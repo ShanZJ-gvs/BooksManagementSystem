@@ -22,4 +22,7 @@ public interface BookInfService {
 
     //查询书库数量
     int getBookNum();
+
+    //查询书库剩余数量
+    int getBookHave();
 }

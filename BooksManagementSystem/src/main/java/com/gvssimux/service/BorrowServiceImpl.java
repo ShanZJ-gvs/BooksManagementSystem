@@ -72,6 +72,11 @@ public class BorrowServiceImpl implements BorrowService {
         return mapper.getOverNum(date);
     }
 
+    @Override
+    public int getOutBookNum(Date date) {
+        return mapper.getOutBookNum(date);
+    }
+
 
 }
 

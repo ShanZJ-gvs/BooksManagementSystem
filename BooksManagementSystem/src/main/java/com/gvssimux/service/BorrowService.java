@@ -38,4 +38,7 @@ public interface BorrowService {
 
     //查询逾期总量
     int getOverNum(Date date);
+
+    //待归还数量
+    int getOutBookNum(Date date);
 }

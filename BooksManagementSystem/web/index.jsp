@@ -58,15 +58,15 @@
 
 
 
-            /*******------------******/
+            /*******-----------------******/
             $.post({
                 url:"${pageContext.request.contextPath}/permonth",
                 data:{},
                 dataType:"json",
                 success:function (json) {
 
-            var canvas = document.getElementById('canvas');
-            var myChart = new Chart(canvas , {
+                var canvas = document.getElementById('canvas');
+                var myChart = new Chart(canvas , {
                 type: 'line',  // 图表的类型
                 data: {
                     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"], //坐标值
@@ -115,6 +115,37 @@
                 }
             })
             /**********************************/
+
+
+            /*******-----------------******/
+            $.post({
+                url:"${pageContext.request.contextPath}/bookindex",
+                data:{},
+                dataType:"json",
+                success:function (json) {
+
+                    var canvas2 = document.getElementById('canvas2');
+                    var myChart2 = new Chart(canvas2 , {
+                        type: 'doughnut',  // 图表的类型
+                        data: {
+                            labels: [ "借出" , "逾期" , "剩余" ],
+                            datasets:[{
+                                label:"",
+                                data:[ json[1], json[2], json[0] ],
+                                backgroundColor:[ "#4e73df" , "#1cc88a" , "#36b9cc" ],
+                                borderColor:[ "#ffffff", "#ffffff" , "#ffffff" ]
+                            }]
+                        },
+                        option:{
+                            maintainAspectRatio:false,
+                            legend:{ display :false},
+                            title:{},
+                        }
+                    })
+                }
+            })
+            /**********************************/
+
 
 
         }
@@ -342,7 +373,7 @@
                     <div class="col-lg-5 col-xl-4">
                         <div class="card shadow mb-4">
                             <div class="card-header d-flex justify-content-between align-items-center">
-                                <h6 class="text-primary font-weight-bold m-0">Revenue Sources</h6>
+                                <h6 class="text-primary font-weight-bold m-0">图书库</h6>
                                 <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
                                          role="menu">
@@ -351,8 +382,16 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="chart-area"><canvas data-bs-chart="{&quot;type :doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
-                                <div class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Direct</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Social</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Refferal</span></div>
+                                <div class="chart-area" id="bookinf" >
+<%--
+                                    <canvas id="canvas2" data-bs-chart="{&quot;type :doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas>
+--%>
+                                    <canvas id="canvas2"></canvas>
+
+                                </div>
+                                <div class="text-center small mt-4">
+                                    <span class="mr-2">
+                                        <i class="fas fa-circle text-primary"></i>&nbsp;借出</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;逾期</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;剩余</span></div>
                             </div>
                         </div>
                     </div>
