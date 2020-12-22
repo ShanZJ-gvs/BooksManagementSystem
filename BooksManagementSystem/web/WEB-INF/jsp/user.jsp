@@ -43,8 +43,8 @@
                     {
 
                         html+="<tr>"+
-                            '<td style="padding-left: 26px;">'+json[i].uname+
-                            '<input type="checkbox" style="margin-left: -49px;"></td>'+
+                            '<td style="padding-left: 60px;"><input type="checkbox" style="margin-left: -49px;">'+json[i].uname+
+                            '</td>'+
                             "<td>"+json[i].sign+"</td>"+
                             "<td>"+json[i].time+"</td>"+
                             '<td><button class="btn btn-info" type="submit" style="height: 29px;">...</button></td>'+

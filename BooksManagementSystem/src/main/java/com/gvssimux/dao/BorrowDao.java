@@ -77,7 +77,7 @@ public interface BorrowDao {
 
 
     //待归还数量
-    @Select("SELECT COUNT(borrow.`status`) FROM borrow WHERE borrow.`status` = '待归还'")
+    @Select("SELECT COUNT(borrow.`status`) FROM borrow WHERE borrow.starttime2 IS NOT NULL AND borrow.endtime IS NULLL")
     int getOutBookNum(Date date);
 
 

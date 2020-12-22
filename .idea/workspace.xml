@@ -11,24 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +216,7 @@
       <updated>1608562360584</updated>
       <workItem from="1608562363578" duration="9466000" />
       <workItem from="1608600278804" duration="1120000" />
-      <workItem from="1608603318195" duration="1532000" />
+      <workItem from="1608603318195" duration="5269000" />
     </task>
     <servers />
   </component>

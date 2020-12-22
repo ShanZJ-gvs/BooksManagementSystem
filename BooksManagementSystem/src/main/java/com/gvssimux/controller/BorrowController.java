@@ -46,10 +46,13 @@ public class BorrowController {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BorrowServiceImpl mapper = context.getBean("BorrowServiceImpl", BorrowServiceImpl.class);
         int[] ints = new int[12];
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < 9; i++) {
             int j = i +1;
-            ints[i] = mapper.getPerSum("%-"+j+"-%");
+            ints[i] = mapper.getPerSum("%-0"+j+"-%");
         }
+        ints[9] = mapper.getPerSum("%-"+10+"-%");
+        ints[10] = mapper.getPerSum("%-"+11+"-%");
+        ints[11] = mapper.getPerSum("%-"+12+"-%");
         JsonUtil jsonUtil = new JsonUtil();
         return jsonUtil.getJson(ints,"yyyy-MM-dd HH:mm:ss");
 

@@ -91,8 +91,53 @@
                         "<tr><td>现有数量</td>"+
                         "<td>"+json.num+"</td></tr>"+
                         "<tr><td>总量</td>"+
-                        "<td>"+json.sum+"</td></tr>";
+                        "<td>"+json.sum+"</td></tr>"+
+                        "<tr><td>操作</td>"+
+                        "<td>"+
+                        '<button onclick='+"change()"+' class="btn btn-info" type="submit" style="height: 29px;">编辑</button>'+
+                        "</td></tr>";
 
+                    var declaration = document.getElementById("thead").style;
+                    var setprop = declaration.setProperty("display", "");
+                    $("#allbook").html(html);
+                }
+            })
+
+        }
+        /*****************************************/
+
+
+        /*******--- 编辑 对应的方法--******/
+        function change(isbn) {
+            $.post({
+                url:"${pageContext.request.contextPath}/onebook",
+                data:{isbn},
+                dataType:"json",
+                success:function (json) {
+                    var html = "";
+                    html+=
+                        "<tr><td>书名</td>"+
+                        "<td>"+json.bookName+"</td></tr>"+
+                        "<tr><td>作者</td>"+
+                        "<td>"+json.bookAuthor+"</td></tr>"+
+                        "<tr><td>出版商</td>"+
+                        "<td>"+json.bookPublish+"</td></tr>"+
+                        "<tr><td>类型</td>"+
+                        "<td>"+json.bookType+"</td></tr>"+
+                        "<tr><td>介绍</td>"+
+                        "<td>"+json.bookIntroduction+"</td></tr>"+
+                        "<tr><td>ISBN</td>"+
+                        "<td>"+json.isbn+"</td></tr>"+
+                        "<tr><td>定价</td>"+
+                        "<td>"+json.money+"</td></tr>"+
+                        "<tr><td>现有数量</td>"+
+                        "<td>"+json.num+"</td></tr>"+
+                        "<tr><td>总量</td>"+
+                        "<td>"+json.sum+"</td></tr>"+
+                        "<tr><td>操作</td>"+
+                        "<td>"+
+                        '<button onclick='+"change("+json.isbn+")"+' class="btn btn-info" type="submit" style="height: 29px;">编辑</button>'+
+                        "</td></tr>";
 
                     var declaration = document.getElementById("thead").style;
                     var setprop = declaration.setProperty("display", "");
