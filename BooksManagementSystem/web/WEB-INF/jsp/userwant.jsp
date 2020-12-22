@@ -50,8 +50,7 @@
                             "<td>"+json[i].publish+"</td>"+
                             "<td>"+json[i].ps+"</td>"+
                             "<td>"+json[i].status+"</td>"+
-                            "<td>"+
-                            '<td class="text-center"><button class="btn btn-outline-info border rounded d-inline-flex" type="button" style="margin: 0px;margin-right: 2px;"><i class="fa fa-check"></i></button>'+
+                            '<td class ="text-center"><button class="btn btn-outline-info border rounded d-inline-flex" type="button" style="margin: 0px;margin-right: 2px;"><i class="fa fa-check"></i></button>'+
                                 '<button class="btn btn-outline-danger text-center border rounded d-inline-flex" type="button" style="width: 40px;margin-right: 2px;"><i class="fa fa-times"></i></button>'+
                                 '<button class="btn btn-outline-link border rounded d-inline-flex" type="button" style="height: 30px;width: 40px;padding-left: 12px;">...</button></td>'+
                             "</tr>"
@@ -267,11 +266,11 @@
                                 <tr>
                                     <th style="width: 138px;">姓名</th>
                                     <th style="width: 130px;"><strong>&nbsp;书名</strong><br></th>
-                                    <th style="width: 130px;"><strong>作者</strong></th>
+                                    <th style="width: 230px;"><strong>作者</strong></th>
                                     <th class="text-left" style="width: 200px;"><strong>出版商</strong><br></th>
                                     <th class="text-center" style="width: 400px;"><strong>备注</strong><br></th>
                                     <th class="text-left" style="width: 142px;">状态</th>
-                                    <th class="text-center" style="width: 150px;">操作</th>
+                                    <th class="text-center" style="width: 250px;">操作</th>
                                 </tr>
                                 </thead>
                                 <tbody id="alluserwant">
@@ -291,14 +290,16 @@
                         </div>
                     </div>
                 </div>
+                <footer class="bg-white sticky-footer">
+                    <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span>Copyright © Gvssimux 2020</span></div>
+                    </div>
+                </footer>
             </div>
         </div>
-        <footer class="bg-white sticky-footer">
-            <div class="container my-auto">
-                <div class="text-center my-auto copyright"><span>Copyright © Gvssimux 2020</span></div>
-            </div>
-        </footer>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+
+    </div><a class="text-center border rounded d-inline d-xl-flex justify-content-xl-center align-items-xl-center scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>

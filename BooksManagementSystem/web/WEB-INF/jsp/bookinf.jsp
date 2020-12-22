@@ -42,6 +42,7 @@
                     var html = "";
                     for (var i=0;i<json.length;i++)
                     {
+                        var isbn = json[i].isbn;
                         html+="<tr>"+
                             "<td>"+json[i].bookName+"</td>"+
                             "<td>"+json[i].bookAuthor+"</td>"+
@@ -51,7 +52,7 @@
                             "<td>"+json[i].bookType+"</td>"+
                             "<td>"+json[i].isbn+"</td>"+
                             "<td>"+
-                                '<button class="btn btn-info" type="submit" style="height: 29px;">...</button>'+
+                                '<button onclick='+"details("+json[i].isbn+")"+' class="btn btn-info" type="submit" style="height: 29px;">...</button>'+
                             "</td>"+
                         "</tr>"
                     };
@@ -62,6 +63,45 @@
             })
 
         }
+
+
+        /*******---。。。对应的方法--******/
+        function details(isbn) {
+            $.post({
+                url:"${pageContext.request.contextPath}/onebook",
+                data:{isbn},
+                dataType:"json",
+                success:function (json) {
+                    var html = "";
+                    html+=
+                        "<tr><td>书名</td>"+
+                        "<td>"+json.bookName+"</td></tr>"+
+                        "<tr><td>作者</td>"+
+                        "<td>"+json.bookAuthor+"</td></tr>"+
+                        "<tr><td>出版商</td>"+
+                        "<td>"+json.bookPublish+"</td></tr>"+
+                        "<tr><td>类型</td>"+
+                        "<td>"+json.bookType+"</td></tr>"+
+                        "<tr><td>介绍</td>"+
+                        "<td>"+json.bookIntroduction+"</td></tr>"+
+                        "<tr><td>ISBN</td>"+
+                        "<td>"+json.isbn+"</td></tr>"+
+                        "<tr><td>定价</td>"+
+                        "<td>"+json.money+"</td></tr>"+
+                        "<tr><td>现有数量</td>"+
+                        "<td>"+json.num+"</td></tr>"+
+                        "<tr><td>总量</td>"+
+                        "<td>"+json.sum+"</td></tr>";
+
+
+                    var declaration = document.getElementById("thead").style;
+                    var setprop = declaration.setProperty("display", "");
+                    $("#allbook").html(html);
+                }
+            })
+
+        }
+        /*****************************************/
     </script>
 </head>
 
@@ -263,7 +303,7 @@
                     <div class="col">
                         <div class="table-responsive">
                             <table class="table">
-                                <thead>
+                                <thead id="thead">
                                 <tr>
                                     <th style="width: 250px;"><strong>书名</strong></th>
                                     <th style="width: 250px;"><strong>作者</strong></th>
@@ -291,14 +331,16 @@
                         </div>
                     </div>
                 </div>
+                <footer class="bg-white sticky-footer">
+                    <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span>Copyright © Gvssimux 2020</span></div>
+                    </div>
+                </footer>
             </div>
+
         </div>
-        <footer class="bg-white sticky-footer">
-            <div class="container my-auto">
-                <div class="text-center my-auto copyright"><span>Copyright © Gvssimux 2020</span></div>
-            </div>
-        </footer>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    </div><a class="text-center border rounded d-inline d-xl-flex justify-content-xl-center align-items-xl-center scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>

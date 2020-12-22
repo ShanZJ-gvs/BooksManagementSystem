@@ -38,6 +38,11 @@ public class BookInfServiceImpl implements BookInfService{
     }
 
     @Override
+    public BookInf getBookByIsbn(String isbn) {
+        return mapper.getBookByIsbn(isbn);
+    }
+
+    @Override
     public int getBookNum() {
         return mapper.getBookNum();
     }

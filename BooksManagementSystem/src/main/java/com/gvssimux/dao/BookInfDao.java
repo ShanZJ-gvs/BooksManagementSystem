@@ -21,6 +21,10 @@ public interface BookInfDao {
     @Select("select * from bookinf")
     List<BookInf> selectAll();
 
+    //根据ISBN查询图书信息
+    @Select("select * from bookinf where ISBN = #{isbn}")
+    BookInf getBookByIsbn(String isbn);
+
     //查询书库数量
     @Select("SELECT COUNT(*) FROM `bookinf`")
     int getBookNum();

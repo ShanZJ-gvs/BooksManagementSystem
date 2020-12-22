@@ -27,15 +27,6 @@ public class BookInfController {
     }
 
 
-    @ResponseBody
-    @RequestMapping("/onebook")
-    public BookInf allBook(){
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
-
-        return bookInfServiceImpl.selectByPrimaryKey(2);
-    }
-
     /**
      * 全部查询
      */
@@ -47,6 +38,19 @@ public class BookInfController {
         System.out.println("执行成功=====》:"+bookInfServiceImpl.selectAll());
         JsonUtil jsonUtil = new JsonUtil();
         return jsonUtil.getJson(bookInfServiceImpl.selectAll());
+    }
+
+    /**
+     * 单个查询
+     */
+    @ResponseBody
+    @RequestMapping("/onebook")
+    public String getOneBook(String isbn) throws JsonProcessingException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+        JsonUtil jsonUtil = new JsonUtil();
+        System.out.println(isbn);
+        return jsonUtil.getJson(bookInfServiceImpl.getBookByIsbn(isbn));
     }
 
 

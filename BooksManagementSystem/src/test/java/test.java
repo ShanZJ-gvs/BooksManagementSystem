@@ -1,10 +1,14 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.gvssimux.pojo.BookInf;
 import com.gvssimux.service.BookInfService;
 import com.gvssimux.service.BookInfServiceImpl;
+import com.gvssimux.util.JsonUtil;
 import jdk.nashorn.internal.ir.debug.ClassHistogramElement;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.UUID;
 
@@ -76,6 +80,17 @@ public class test {
         System.out.println("执行成功=====》:"+bookInfServiceImpl.selectByPrimaryKey(6));
     }
 
+
+    /**
+     * 单个查询
+     */
+    @Test
+    public void getOneBook() throws JsonProcessingException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+        JsonUtil jsonUtil = new JsonUtil();
+        System.out.println(jsonUtil.getJson(bookInfServiceImpl.getBookByIsbn("9787806570920")));
+    }
 
     /**
      * 全部查询

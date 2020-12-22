@@ -48,9 +48,8 @@
                             "<td>"+json[i].status+"</td>"+
                             "<td>"+json[i].starttime+"</td>"+
                             "<td>"+json[i].status+"</td>"+
-                            "<td>"+
                             '<td class="text-center">' +
-                                '<button class="btn btn-outline-info border rounded d-inline-flex" type="button" style="margin: 0px;margin-right: 2px;"><i class="fa fa-check"></i></button>' +
+                                '<button onclick="ture()" class="btn btn-outline-info border rounded d-inline-flex" type="button" style="margin: 0px;margin-right: 2px;"><i class="fa fa-check"></i></button>' +
                                 '<button class="btn btn-outline-danger text-center border rounded d-inline-flex" type="button" style="width: 40px;margin-right: 2px;"><i class="fa fa-times"></i></button>' +
                                 '<button class="btn btn-outline-link border rounded d-inline-flex" type="button" style="height: 30px;width: 40px;padding-left: 12px;">...</button>' +
                             '</td>'+
@@ -63,6 +62,38 @@
             })
 
         }
+
+
+
+        /*******---确认按钮对应的方法（未写）--******/
+        function ture() {
+            $.post({
+                url:"${pageContext.request.contextPath}/turemessage",
+                data:{},
+                dataType:"json",
+                success:function (json) {
+                    var html = "";
+                    var j = 1;
+                    for (var i=0;i<json.length;i++)
+                    {
+
+                        html+="<li class='list-group-item'><div class='row align-items-center no-gutters'>"+
+                            "<div class='col mr-2'><h6 class='mb-0'><strong>"+json[i].bookname+"</strong></h6><span class='text-xs'>"+json[i].starttime+"</span></div>"+
+                            "<div class='col-auto'><div class='custom-control custom-checkbox'>"+
+                            "<input class='custom-control-input' type='checkbox' id='formCheck-"+j+"'><label class='custom-control-label' for='formCheck-"+j+"'></label></div>"+
+                            "</div></div></li>"
+                        j = j+1;
+
+
+                    };
+
+                    $("#card3").html(html);
+                }
+            })
+
+        }
+        /*****************************************/
+
     </script>
 </head>
 <body id="page-top" onpageshow="show()">
@@ -287,14 +318,16 @@
                         </div>
                     </div>
                 </div>
+                <footer class="bg-white sticky-footer">
+                    <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span>Copyright © Gvssimux 2020</span></div>
+                    </div>
+                </footer>
             </div>
         </div>
-        <footer class="bg-white sticky-footer">
-            <div class="container my-auto">
-                <div class="text-center my-auto copyright"><span>Copyright © Gvssimux 2020</span></div>
-            </div>
-        </footer>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+
+    </div><a class="text-center border rounded d-inline d-xl-flex justify-content-xl-center align-items-xl-center scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>

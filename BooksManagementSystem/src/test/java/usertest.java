@@ -71,8 +71,11 @@ public class usertest {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserServiceImpl user = context.getBean("UserServiceImpl", UserServiceImpl.class);
 
-        User user1 = new User("小明",GetUUID.get(),"user01","12345","user",5);
-        System.out.println(user.insertSelective(user1));
+        for (int i = 5; i < 10; i++) {
+            User user1 = new User(GetUUID.get(),"小明","user0"+i,"12345","user",5);
+            System.out.println(user.insertSelective(user1));
+        }
+
     }
 
 

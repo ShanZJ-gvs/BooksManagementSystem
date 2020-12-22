@@ -20,6 +20,9 @@ public interface BookInfService {
 
     List<BookInf> selectAll();
 
+    //根据ISBN查询图书信息
+    BookInf getBookByIsbn(String isbn);
+
     //查询书库数量
     int getBookNum();
 
