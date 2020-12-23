@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BorrowDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
     </list>
@@ -61,6 +61,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,7 +214,8 @@
       <workItem from="1608562363578" duration="9466000" />
       <workItem from="1608600278804" duration="1120000" />
       <workItem from="1608603318195" duration="5269000" />
-      <workItem from="1608646438376" duration="3136000" />
+      <workItem from="1608646438376" duration="3193000" />
+      <workItem from="1608689185119" duration="8166000" />
     </task>
     <servers />
   </component>

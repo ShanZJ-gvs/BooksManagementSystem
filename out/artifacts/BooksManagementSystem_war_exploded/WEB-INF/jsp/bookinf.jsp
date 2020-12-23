@@ -52,7 +52,7 @@
                             "<td>"+json[i].bookType+"</td>"+
                             "<td>"+json[i].isbn+"</td>"+
                             "<td>"+
-                                '<button onclick='+"details("+json[i].isbn+")"+' class="btn btn-info" type="submit" style="height: 29px;">...</button>'+
+                                '<button onclick='+"details("+json[i].isbn+")"+' class="btn btn-info" type="button" style="height: 29px;">...</button>'+
                             "</td>"+
                         "</tr>"
                     };
@@ -73,7 +73,7 @@
                 dataType:"json",
                 success:function (json) {
                     var html = "";
-                    html+=
+                    html+='<input id="bookid" value="'+json.id+'"name="bookId" style="display: none"/>'+
                         "<tr><td>书名</td>"+
                         "<td>"+json.bookName+"</td></tr>"+
                         "<tr><td>作者</td>"+
@@ -94,7 +94,7 @@
                         "<td>"+json.sum+"</td></tr>"+
                         "<tr><td>操作</td>"+
                         "<td>"+
-                        '<button onclick='+"change("+json.isbn+")"+' class="btn btn-info" type="submit" style="height: 29px;">编辑</button>'+
+                        '<button onclick='+"change("+json.isbn+")"+' class="btn btn-info  text-center" type="button" style="height: 29px;">编辑</button>'+
                         "</td></tr>";
 
                     /*让表头隐藏*/
@@ -108,44 +108,61 @@
         /*****************************************/
 
 
-        /*******--- 编辑 对应的方法--******/
+        /*******--- 编辑 对应的方法，相对于details(isbn)方法，就是将文本改为了input标签--******/
         function change(isbn) {
             $.post({
-                url:"${pageContext.request.contextPath}/onebook",
+                url: "${pageContext.request.contextPath}/onebook",
                 data:{isbn},
                 dataType:"json",
                 success:function (json) {
                    /*<input type="text" class="border rounded border-primary form-control-sm" value="json.bookName" />*/
                     var html = "";
-                    html+=
+                    html+='<input id="bookid" value="'+json.id+'"name="bookId" style="display: none"/>'+
                         "<tr><td>书名</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.bookName+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="bookName" value="'+json.bookName+'"/></td></tr>'+
                         "<tr><td>作者</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.bookAuthor+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="bookAuthor" value="'+json.bookAuthor+'"/></td></tr>'+
                         "<tr><td>出版商</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.bookPublish+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="bookPublish" value="'+json.bookPublish+'"/></td></tr>'+
                         "<tr><td>类型</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.bookType+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="bookType" value="'+json.bookType+'"/></td></tr>'+
                         "<tr><td>介绍</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.bookIntroduction+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="bookIntroduction" value="'+json.bookIntroduction+'"/></td></tr>'+
                         "<tr><td>ISBN</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.isbn+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="isbn" value="'+json.isbn+'"/></td></tr>'+
                         "<tr><td>定价</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.money+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="money" value="'+json.money+'"/></td></tr>'+
                         "<tr><td>现有数量</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.num+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="num" value="'+json.num+'"/></td></tr>'+
                         "<tr><td>总量</td>"+
-                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" value="'+json.sum+'"/></td></tr>'+
+                        "<td>"+'<input type="text" class="border rounded border-primary form-control-sm" name="sum" value="'+json.sum+'"/></td></tr>'+
                         "<tr><td>操作</td>"+
                         "<td>"+
-                        '<button onclick='+"change("+json.isbn+")"+' class="btn btn-info" type="submit" style="height: 29px;">编辑</button>'+
-                        '<button onclick='+"change("+json.isbn+")"+' class="btn btn-warning" type="submit" style="height: 29px; margin-left: 5px">确认</button>'+
+                        '<button onclick='+"sure("+json.isbn+")"+' class="btn btn-warning text-center" type="button" style="height: 29px;">提交</button>'+
+                        /*'<button  class="btn btn-warning text-center" type="submit" style="height: 29px;">提交</button>'+*/
                         "</td></tr>";
+
 
                     /*让表头隐藏*/
                     /*var declaration = document.getElementById("thead").style;
                     var setprop = declaration.setProperty("display", "");*/
                     $("#allbook").html(html);
+                }
+            })
+
+        }
+        /*****************************************/
+
+        /*******--- 确认按钮 对应的方法--******/
+        function sure(isbn) {
+            $.post({
+                url:"${pageContext.request.contextPath}/bookchange",
+                data:$("#bookform").serialize(),
+                dataType:"json",
+                success:function (json) {
+
+                   details(json);
+
                 }
             })
 
@@ -274,10 +291,8 @@
                         <div class="d-none d-sm-block topbar-divider"></div>
                         <li class="nav-item dropdown no-arrow" role="presentation">
                             <div class="nav-item dropdown no-arrow"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/touxiang.png"></button>
-                                <div
-                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
-                                    <a
-                                            class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
+                                <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
+                                    <a class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
                                     <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
                             </div>
                         </li>
@@ -351,6 +366,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="table-responsive">
+                            <form id="bookform" action="/bookchange" method="post">
                             <table class="table">
                                 <thead id="thead">
                                 <tr>
@@ -377,6 +393,7 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -11,6 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.print.Book;
 import java.io.Serializable;
 import java.util.List;
 
@@ -51,6 +54,34 @@ public class BookInfController {
         JsonUtil jsonUtil = new JsonUtil();
         System.out.println(isbn);
         return jsonUtil.getJson(bookInfServiceImpl.getBookByIsbn(isbn));
+    }
+
+
+    /**
+     * 部分修改
+     */
+    @ResponseBody
+    @RequestMapping("/bookchange")
+    public String changeBook(HttpServletRequest request, HttpServletResponse response) throws JsonProcessingException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+        JsonUtil jsonUtil = new JsonUtil();
+        //创建接收对象
+        BookInf object = new BookInf();
+        object.setIsbn(request.getParameter("isbn"));
+        object.setBookName(request.getParameter("bookName"));
+        object.setBookAuthor(request.getParameter("bookAuthor"));
+        object.setBookPublish(request.getParameter("bookPublish"));
+        object.setBookIntroduction(request.getParameter("bookIntroduction"));
+        object.setBookType(request.getParameter("bookType"));
+        object.setMoney(request.getParameter("money"));
+        object.setSum(Integer.valueOf(request.getParameter("sum")));
+        object.setNum(Integer.valueOf(request.getParameter("num")));
+        object.setId(Integer.valueOf(request.getParameter("bookId")));
+
+        bookInfServiceImpl.updateByPrimaryKeySelective(object);
+        //System.out.println("======================"+request.getParameter("bookName")+"====================");
+        return jsonUtil.getJson(object.getIsbn());
     }
 
 
