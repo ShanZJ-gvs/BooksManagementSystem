@@ -10,15 +10,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/CommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/CommentDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/Pretty-Registration-Form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/login.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,8 +81,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringMVC" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +96,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\bootstrap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\WEB-INF\jsp" />
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\css" />
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\img\avatars" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.37">
     <configuration name="GetUUID" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -65,13 +121,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -215,7 +273,13 @@
       <workItem from="1608600278804" duration="1120000" />
       <workItem from="1608603318195" duration="5269000" />
       <workItem from="1608646438376" duration="3193000" />
-      <workItem from="1608689185119" duration="8166000" />
+      <workItem from="1608689185119" duration="9004000" />
+      <workItem from="1608733575553" duration="1458000" />
+      <workItem from="1608781723969" duration="2813000" />
+      <workItem from="1608785128652" duration="47000" />
+      <workItem from="1609062478801" duration="2417000" />
+      <workItem from="1609146712745" duration="5036000" />
+      <workItem from="1609205783741" duration="5258000" />
     </task>
     <servers />
   </component>

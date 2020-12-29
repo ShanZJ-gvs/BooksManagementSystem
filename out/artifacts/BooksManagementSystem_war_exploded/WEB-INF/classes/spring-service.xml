@@ -22,7 +22,9 @@
     <bean id="UserWantServiceImpl" class="com.gvssimux.service.UserWantServiceImpl">
         <property name="mapper" ref="userWantDao"/>
     </bean>
-
+    <bean id="CommentServiceImpl" class="com.gvssimux.service.CommentServiceImpl">
+        <property name="mapper" ref="commentDao"/>
+    </bean>
 
 
 

@@ -2,9 +2,7 @@ package com.gvssimux.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.gvssimux.service.UserServiceImpl;
 import com.gvssimux.service.UserWantServiceImpl;
-import com.gvssimux.util.JsonUtil;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;

@@ -232,11 +232,6 @@
                                             <div class="col-auto">
                                                 <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span id="borrownum">0</span></div>
                                             </div>
-                                            <div class="col">
-                                                <div class="progress progress-sm" style="filter: saturate(101%);">
-                                                    <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="sr-only">50%</span></div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-auto"><i class="fas fa-clipboard-list fa-2x text-gray-300"></i></div>

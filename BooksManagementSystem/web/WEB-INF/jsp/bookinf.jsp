@@ -75,9 +75,9 @@
                     var html = "";
                     html+='<input id="bookid" value="'+json.id+'"name="bookId" style="display: none"/>'+
                         "<tr><td>书名</td>"+
-                        "<td>"+json.bookName+"</td></tr>"+
+                        "<td>"+json.bookName+"</td><td>评论</td></tr>"+
                         "<tr><td>作者</td>"+
-                        "<td>"+json.bookAuthor+"</td></tr>"+
+                        "<td>"+json.bookAuthor+'</td><td>熊熊：这本书很不错  <button class="btn btn-sm rounded-circle" type="button" style="height: 29px"><i class="fa fa-times"></i></button></td></tr>'+
                         "<tr><td>出版商</td>"+
                         "<td>"+json.bookPublish+"</td></tr>"+
                         "<tr><td>类型</td>"+
@@ -97,9 +97,18 @@
                         '<button onclick='+"change("+json.isbn+")"+' class="btn btn-info  text-center" type="button" style="height: 29px;">编辑</button>'+
                         "</td></tr>";
 
-                    /*让表头隐藏*/
-                    /*var declaration = document.getElementById("thead").style;
-                    var setprop = declaration.setProperty("display", "");*/
+
+                   /* /!*让表头隐藏*!/
+                    var declaration = document.getElementById("thead").style;
+                    var setprop = declaration.setProperty("display", "none");*/
+                    var theadHtml = "";
+                    theadHtml += ' <tr>'+
+                        '<th style="width: 150px;"><strong></strong></th>'+
+                        '<th style="width: 10px;"><strong></strong></th>'+
+                        '<th style="width: 500px;"><strong></strong><br></th>'+
+                    '</tr>';
+
+                    $("#thead").html(theadHtml);
                     $("#allbook").html(html);
                 }
             })
@@ -144,8 +153,8 @@
 
 
                     /*让表头隐藏*/
-                    /*var declaration = document.getElementById("thead").style;
-                    var setprop = declaration.setProperty("display", "");*/
+                    var declaration = document.getElementById("thead").style;
+                    var setprop = declaration.setProperty("display", "none");
                     $("#allbook").html(html);
                 }
             })
@@ -336,11 +345,6 @@
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
                                                 <div class="text-dark font-weight-bold h5 mb-0 mr-3"><span id="borrownum">0</span></div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="progress progress-sm" style="filter: saturate(101%);">
-                                                    <div class="progress-bar bg-info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="sr-only">50%</span></div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

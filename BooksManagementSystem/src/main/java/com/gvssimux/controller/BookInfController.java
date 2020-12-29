@@ -3,6 +3,7 @@ package com.gvssimux.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.gvssimux.pojo.BookInf;
 import com.gvssimux.service.BookInfServiceImpl;
+import com.gvssimux.service.CommentServiceImpl;
 import com.gvssimux.util.JsonUtil;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -82,6 +83,19 @@ public class BookInfController {
         bookInfServiceImpl.updateByPrimaryKeySelective(object);
         //System.out.println("======================"+request.getParameter("bookName")+"====================");
         return jsonUtil.getJson(object.getIsbn());
+    }
+
+    /**
+     * 查询书籍评论
+     */
+    @ResponseBody
+    @RequestMapping("/getcomm")
+    public String getComment(String isbn) throws JsonProcessingException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        CommentServiceImpl mapper = context.getBean("CommentServiceImpl", CommentServiceImpl.class);
+        JsonUtil jsonUtil = new JsonUtil();
+        System.out.println(isbn);
+        return jsonUtil.getJson(mapper.getCommentByIsbn(isbn));
     }
 
 
