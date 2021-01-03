@@ -123,7 +123,7 @@
                 <input class="form-check-input" type="checkbox" id="formCheck-3">
                 <label class="form-check-label" for="formCheck-3">I've read and accept the terms and conditions</label>
             </div>
-            <button class="btn btn-primary border rounded submit-button" type="button">注册</button>
+            <button class="btn btn-primary border rounded submit-button" type="submit">注册</button>
         </form>
     </div>
 </div>

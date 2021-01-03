@@ -29,7 +29,7 @@ public class HomeController {
     @RequestMapping("/setuser")
     public String setUser(){
 
-        return "/home.jsp";
+        return "/home";
     }
 
 
