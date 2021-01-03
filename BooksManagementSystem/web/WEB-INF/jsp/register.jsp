@@ -53,7 +53,7 @@
 <body style="background-image: url('assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg');background-repeat: no-repeat;background-size: cover;background-position: top;">
 <div class="row m-auto register-form">
     <div class="col-md-8 offset-md-2">
-        <form class="custom-form">
+        <form class="custom-form" action="${pageContext.request.contextPath}/setuser" method="post">
             <h1>注 &nbsp;册</h1>
             <div class="form-row form-group">
                 <div class="col-sm-4 label-column">
@@ -123,8 +123,8 @@
                 <input class="form-check-input" type="checkbox" id="formCheck-3">
                 <label class="form-check-label" for="formCheck-3">I've read and accept the terms and conditions</label>
             </div>
-            <button class="btn btn-primary border rounded submit-button"
-                                                                                                                                                                                                                          type="button">注册</button></form>
+            <button class="btn btn-primary border rounded submit-button" type="button">注册</button>
+        </form>
     </div>
 </div>
 <script src="assets/js/jquery.min.js"></script>

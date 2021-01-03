@@ -2,23 +2,40 @@ package com.gvssimux.controller;
 
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
     /**
-     * 跳转页面
+     * 点击登录按钮后跳转到home页面
      */
     @RequestMapping("/tohome")
     public String tohome(){
 
-        return "home";
+        return "/home.jsp";
+    }
+    /**
+     * 点击注册按钮跳转到注册页面
+     */
+    @RequestMapping("/register")
+    public String toRegister(){
+
+        return "register";
+    }
+    /**
+     * 点击注册按钮跳转到注册页面
+     */
+    @RequestMapping("/setuser")
+    public String setUser(){
+
+        return "/home.jsp";
     }
 
+
+
     @ResponseBody
-    @RequestMapping("/login")
+    @RequestMapping("/check")
     public String loginUser(String name,String pwd) {
 
         String msg = "";

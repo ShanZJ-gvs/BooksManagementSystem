@@ -10,41 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/CommentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/CommentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/Pretty-Registration-Form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/free-mybatis-generator-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserWantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/register.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,19 +91,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -279,7 +240,9 @@
       <workItem from="1608785128652" duration="47000" />
       <workItem from="1609062478801" duration="2417000" />
       <workItem from="1609146712745" duration="5036000" />
-      <workItem from="1609205783741" duration="5258000" />
+      <workItem from="1609205783741" duration="5357000" />
+      <workItem from="1609235260517" duration="140000" />
+      <workItem from="1609645970136" duration="1437000" />
     </task>
     <servers />
   </component>
@@ -297,7 +260,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

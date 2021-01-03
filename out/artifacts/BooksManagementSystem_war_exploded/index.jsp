@@ -19,7 +19,7 @@
     <script>
         function exitName() {
             $.post({
-                url:"${pageContext.request.contextPath}/login",
+                url:"${pageContext.request.contextPath}/check",
                 data:{"name":$("#name").val()},
                 success:function (data) {
                     console.log(data);
@@ -37,7 +37,7 @@
 
         function exitPwd() {
             $.post({
-                url:"${pageContext.request.contextPath}/login",
+                url:"${pageContext.request.contextPath}/check",
                 data:{"pwd":$("#pwd").val()},
                 success:function (data) {
                     console.log(data);
@@ -55,7 +55,7 @@
 <body style="background-image: url('assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg');background-repeat: no-repeat;background-size: cover;background-position: right;">
 <div class="row m-auto register-form">
     <div class="col-md-8 offset-md-2">
-        <form class="custom-form"  action="${pageContext.request.contextPath}/login" method="post">
+        <form class="custom-form"  action="${pageContext.request.contextPath}/tohome" method="post">
             <h1>登 &nbsp;录</h1>
             <div class="form-row form-group">
                 <div class="col-sm-4 label-column">
@@ -83,8 +83,11 @@
                     <input class="form-control" type="text">
                 </div>
             </div>
-            <button class="btn btn-primary border rounded submit-button" disabled type="submit">登录</button>
-            <button class="btn btn-primary border rounded submit-button" type="button">注册</button></form>
+            <button class="btn btn-primary border rounded submit-button" type="submit">登录</button>
+            <a class="btn btn-primary border rounded submit-button" role="button" href="${pageContext.request.contextPath}/register">注册</a>
+        </form>
+
+
     </div>
 </div>
 <script src="assets/js/jquery.min.js"></script>
