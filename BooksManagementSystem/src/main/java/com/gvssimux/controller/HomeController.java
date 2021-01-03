@@ -13,7 +13,7 @@ public class HomeController {
     @RequestMapping("/tohome")
     public String tohome(){
 
-        return "/home.jsp";
+        return "/home";
     }
     /**
      * 点击注册按钮跳转到注册页面
