@@ -10,25 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/Pretty-Registration-Form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/untitled-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/css/untitled.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/fonts/fontawesome5-overrides.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/js/bs-charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/js/chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase___.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase___.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BMS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/BookInfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/BookInfDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/BookInfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/BookInfDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/BorrowDao.xml" beforeDir="false" />
@@ -36,15 +26,15 @@
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/OverTimeDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/com/gvssimux/dao/UserWantDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/mybatis-config.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-dao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-mvc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/BookInfDao.xml" beforeDir="false" />
@@ -53,8 +43,6 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/OverTimeDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/com/gvssimux/dao/UserWantDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-dao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
@@ -72,10 +60,48 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/user.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/jsp/userwant.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/css/Pretty-Registration-Form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/css/untitled-1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/css/untitled.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/fonts/fontawesome5-overrides.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/avatar5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/img/avatars/touxiang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/bs-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/assets/js/theme.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/css/NewLogin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BooksManagementSystem_war_exploded/static/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +153,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/BooksManagementSystem/web/assets/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BooksManagementSystem/web/assets/img/avatars" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -138,11 +164,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\img\avatars" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\css" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\bootstrap" />
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets" />
-      <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\bootstrap\js" />
@@ -152,7 +178,7 @@
       <recent name="D:\JavaProject\BMS\BooksManagementSystem\web\assets\img\avatars" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.37">
+  <component name="RunManager" selected="JUnit.test.getA">
     <configuration name="GetUUID" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gvssimux.util.GetUUID" />
       <module name="BooksManagementSystem" />
@@ -166,11 +192,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="borrow.get3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="borrow" />
       <option name="METHOD_NAME" value="get3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.getA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksManagementSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="getA" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,14 +336,15 @@
       <item itemvalue="JUnit.usertest.add" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
       <item itemvalue="应用程序.GetUUID" />
+      <item itemvalue="JUnit.test.getA" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test.getA" />
         <item itemvalue="应用程序.GetUUID" />
         <item itemvalue="JUnit.usertest.add" />
         <item itemvalue="JUnit.test.getOneBook" />
         <item itemvalue="JUnit.borrow.get3" />
-        <item itemvalue="应用程序.GetUUID" />
       </list>
     </recent_temporary>
   </component>
@@ -321,6 +369,8 @@
       <workItem from="1609205783741" duration="5357000" />
       <workItem from="1609235260517" duration="140000" />
       <workItem from="1609645970136" duration="2955000" />
+      <workItem from="1609657348150" duration="111000" />
+      <workItem from="1609733010973" duration="8873000" />
     </task>
     <servers />
   </component>

@@ -98,5 +98,26 @@ public class BookInfController {
         return jsonUtil.getJson(mapper.getCommentByIsbn(isbn));
     }
 
+    /**
+     * 模糊查询
+     */
+
+    @RequestMapping("/search")
+    public void getA(HttpServletRequest request, HttpServletResponse response){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+        JsonUtil jsonUtil = new JsonUtil();
+        //创建接收对象
+        BookInf object = new BookInf();
+        object.setIsbn(request.getParameter("bookIsbn"));
+        object.setBookName(request.getParameter("bookName"));
+        object.setBookAuthor(request.getParameter("bookAuthor"));
+        object.setBookPublish(request.getParameter("bookPublish"));
+        object.setBookType(request.getParameter("bookType"));
+        object.setId(Integer.valueOf(request.getParameter("bookId")));
+
+        System.out.println("执行成功=====》:"+bookInfServiceImpl.searchBook(object));
+    }
+
 
 }

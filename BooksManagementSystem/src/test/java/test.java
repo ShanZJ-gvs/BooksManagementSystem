@@ -103,6 +103,18 @@ public class test {
         System.out.println("执行成功=====》:"+bookInfServiceImpl.selectAll());
     }
 
+    /**
+     * 模糊查询
+     */
+    @Test
+    public void getA(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        BookInfServiceImpl bookInfServiceImpl = context.getBean("BookServiceImpl", BookInfServiceImpl.class);
+        BookInf bookInf = new BookInf();
+        bookInf.setBookName("%C%");
+        System.out.println("执行成功=====》:"+bookInfServiceImpl.searchBook(bookInf));
+    }
+
 
 
 

@@ -1,6 +1,7 @@
 package com.gvssimux.dao;
 
 import com.gvssimux.pojo.BookInf;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -32,5 +33,8 @@ public interface BookInfDao {
     //查询书库剩余数量
     @Select("SELECT SUM(bookinf.num) FROM bookinf")
     int getBookHave();
+
+    //模糊查询（未写完）
+    List<BookInf> searchBook(BookInf record);
 
 }

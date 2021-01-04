@@ -18,6 +18,7 @@ public interface BookInfService {
 
     int updateByPrimaryKey(BookInf record);
 
+    //全部查询
     List<BookInf> selectAll();
 
     //根据ISBN查询图书信息
@@ -28,4 +29,7 @@ public interface BookInfService {
 
     //查询书库剩余数量
     int getBookHave();
+
+    //模糊查询（未写完）
+    List<BookInf> searchBook(BookInf record);
 }

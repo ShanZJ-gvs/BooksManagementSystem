@@ -142,4 +142,29 @@
       num = #{num,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="searchBook" parameterType="com.gvssimux.pojo.BookInf" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from bookinf
+    <where>
+      <choose>
+        <when test="bookName != null">
+          book_name like #{bookName,jdbcType=VARCHAR}
+        </when>
+        <when test="bookAuthor != null">
+          OR book_author like #{bookAuthor,jdbcType=VARCHAR}
+        </when>
+        <when test="bookPublish != null">
+          OR book_publish like #{bookPublish,jdbcType=VARCHAR}
+        </when>
+        <when test="bookType != null">
+          OR book_type like #{bookType,jdbcType=VARCHAR}
+        </when>
+        <when test="isbn != null">
+          OR ISBN like #{isbn,jdbcType=VARCHAR}
+        </when>
+      </choose>
+    </where>
+  </select>
 </mapper>
