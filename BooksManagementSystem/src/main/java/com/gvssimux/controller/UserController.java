@@ -8,6 +8,7 @@ import com.gvssimux.util.JsonUtil;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -15,13 +16,6 @@ import java.util.Date;
 
 @Controller
 public class UserController {
-
-    @RequestMapping("/touser")
-    public String toBorrow(){
-
-        return "user";
-    }
-
     @ResponseBody
     @RequestMapping("/alluser")
     public String getUser() throws JsonProcessingException {
@@ -49,6 +43,6 @@ public class UserController {
         int[] ints = {mapper3.getBookNum(), mapper.getUserNum(), mapper2.getBorrowNum(),mapper2.getOverNum(date)};
         JsonUtil jsonUtil = new JsonUtil();
         return jsonUtil.getJson(ints);
-
     }
+
 }

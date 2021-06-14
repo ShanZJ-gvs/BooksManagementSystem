@@ -4,6 +4,7 @@ package com.gvssimux.service;
 import com.gvssimux.dao.UserDao;
 import com.gvssimux.pojo.BookInf;
 import com.gvssimux.pojo.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -47,6 +48,18 @@ public class UserServiceImpl implements UserService{
     @Override
     public int getUserNum() {
         return mapper.getUserNum();
+    }
+
+    @Override
+    public User getUserIdByUserNamePwd(String username, String pwd) {
+        return mapper.getUserIdByUserNamePwd(username, pwd);
+    }
+
+    //2021-写
+    //注册---验证用户名是否在数据中
+    @Override
+    public int getUserByUser(String user){
+        return mapper.getUserByUser(user);
     }
 
 

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BooksManagementSystem:war">
+    <output-path>$PROJECT_DIR$/BooksManagementSystem/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>BooksManagementSystem</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BooksManagementSystem-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BooksManagementSystem:war exploded" />
+    </root>
+  </artifact>
+</component>

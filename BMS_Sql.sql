@@ -1,4 +1,4 @@
-show VARIABLES like 'max_connections'
+show VARIABLES like 'max_connections';
 
 set GLOBAL max_connections=3600;
 

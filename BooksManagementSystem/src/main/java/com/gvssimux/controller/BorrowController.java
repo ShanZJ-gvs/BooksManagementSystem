@@ -21,12 +21,6 @@ import java.util.List;
 public class BorrowController {
 
 
-    @RequestMapping("/toborrow")
-    public String toBorrow(){
-
-        return "borrow";
-    }
-
     @ResponseBody
     @RequestMapping("/allborrow")
     public String getAllBorrow() throws JsonProcessingException {

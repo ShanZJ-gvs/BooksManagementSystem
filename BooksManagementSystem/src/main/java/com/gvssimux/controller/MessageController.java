@@ -12,11 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MessageController {
 
-    @RequestMapping("/tomessage")
-    public String toBorrow(){
-
-        return "message";
-    }
 
     @ResponseBody
     @RequestMapping("/allmessage")

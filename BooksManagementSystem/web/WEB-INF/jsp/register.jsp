@@ -15,27 +15,30 @@
     <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script>
-        function exitName() {
+        function exitUser() {
             $.post({
-                url:"${pageContext.request.contextPath}/login",
-                data:{"name":$("#name").val()},
+                url:"${pageContext.request.contextPath}/registerUser",
+                data:{"name":$("#user").val()},
                 success:function (data) {
                     console.log(data);
 
                     if (data.toString()==="UserNameOK"){
                         $("#userInfo").css("color","green");
+                        alert(1);
 
                     }
                     $("#userInfo").html(data);
+                },
+                error:function (data){
+                    alert(2);
                 }
-
             })
 
         }
 
         function exitPwd() {
             $.post({
-                url:"${pageContext.request.contextPath}/login",
+                url:"${pageContext.request.contextPath}/registerUser",
                 data:{"pwd":$("#pwd").val()},
                 success:function (data) {
                     console.log(data);

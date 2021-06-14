@@ -11,11 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class UserWantController {
-    @RequestMapping("/touserwant")
-    public String toBorrow(){
-
-        return "userwant";
-    }
 
     @ResponseBody
     @RequestMapping("/alluserwant")

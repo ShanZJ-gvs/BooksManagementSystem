@@ -22,16 +22,6 @@ import java.util.List;
 public class BookInfController {
 
     /**
-     * 跳转页面
-     */
-    @RequestMapping("/tobookinf")
-    public String toBookInf(Model model){
-
-        return "bookinf";
-    }
-
-
-    /**
      * 全部查询
      */
     @ResponseBody
