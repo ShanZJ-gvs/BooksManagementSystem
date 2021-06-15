@@ -59,7 +59,12 @@ public class UserServiceImpl implements UserService{
     //注册---验证用户名是否在数据中
     @Override
     public int getUserByUser(String user){
-        return mapper.getUserByUser(user);
+        if (mapper.getUserByUser(user)==null){
+            return 0;
+        }
+        if(mapper.getUserByUser(user).equals(user))
+            return 1;
+        return 0;
     }
 
 

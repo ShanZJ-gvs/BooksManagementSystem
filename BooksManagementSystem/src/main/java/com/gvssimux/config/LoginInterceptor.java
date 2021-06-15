@@ -31,6 +31,12 @@ public class LoginInterceptor implements HandlerInterceptor {
             return true;
         }
 
+        if (request.getRequestURI().contains("setuser")){
+            System.out.println("Loginintercepter===>url contian setuser");
+            return true;
+        }
+
+
         //有session时放行
         if(session.getAttribute("uuid")!=null){
             System.out.println("LoginInterceptor===>session true");

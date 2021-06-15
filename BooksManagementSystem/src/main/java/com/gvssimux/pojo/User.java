@@ -64,4 +64,7 @@ public class User implements Serializable {
         this.sign = sign;
         this.time = time;
     }
+
+
+
 }

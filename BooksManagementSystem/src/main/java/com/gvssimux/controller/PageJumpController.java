@@ -44,14 +44,7 @@ public class PageJumpController {
     }
 
 
-    /**
-     * 点击注册按钮跳转到注册页面
-     */
-    @RequestMapping("/setuser")
-    public String setUser(){
 
-        return "/home";
-    }
 
     @RequestMapping("/tomessage")
     public String toMessage(){

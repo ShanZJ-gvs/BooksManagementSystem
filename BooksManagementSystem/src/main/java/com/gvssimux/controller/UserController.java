@@ -16,6 +16,17 @@ import java.util.Date;
 
 @Controller
 public class UserController {
+
+//    @ResponseBody
+//    @RequestMapping("/getUnameByUser")
+//    public String getUnameByUser() throws JsonProcessingException {
+//        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        UserServiceImpl mapper = context.getBean("UserServiceImpl", UserServiceImpl.class);
+//        return "wad";
+//
+//    }
+
+
     @ResponseBody
     @RequestMapping("/alluser")
     public String getUser() throws JsonProcessingException {

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gvssimux.dao.CommentDao">
+  <resultMap id="BaseResultMap" type="com.gvssimux.pojo.Comment">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="comid" jdbcType="VARCHAR" property="comid" />
+    <result column="uname" jdbcType="VARCHAR" property="uname" />
+    <result column="uuid" jdbcType="VARCHAR" property="uuid" />
+    <result column="borrowid" jdbcType="VARCHAR" property="borrowid" />
+    <result column="isbn" jdbcType="VARCHAR" property="isbn" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, comid, uname, uuid, borrowid, isbn, content
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from comment
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from comment
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.Comment" useGeneratedKeys="true">
+    insert into comment (comid, uname, uuid, 
+      borrowid, isbn, content
+      )
+    values (#{comid,jdbcType=VARCHAR}, #{uname,jdbcType=VARCHAR}, #{uuid,jdbcType=VARCHAR}, 
+      #{borrowid,jdbcType=VARCHAR}, #{isbn,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gvssimux.pojo.Comment" useGeneratedKeys="true">
+    insert into comment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="comid != null">
+        comid,
+      </if>
+      <if test="uname != null">
+        uname,
+      </if>
+      <if test="uuid != null">
+        uuid,
+      </if>
+      <if test="borrowid != null">
+        borrowid,
+      </if>
+      <if test="isbn != null">
+        isbn,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="comid != null">
+        #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="uname != null">
+        #{uname,jdbcType=VARCHAR},
+      </if>
+      <if test="uuid != null">
+        #{uuid,jdbcType=VARCHAR},
+      </if>
+      <if test="borrowid != null">
+        #{borrowid,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn != null">
+        #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gvssimux.pojo.Comment">
+    update comment
+    <set>
+      <if test="comid != null">
+        comid = #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="uname != null">
+        uname = #{uname,jdbcType=VARCHAR},
+      </if>
+      <if test="uuid != null">
+        uuid = #{uuid,jdbcType=VARCHAR},
+      </if>
+      <if test="borrowid != null">
+        borrowid = #{borrowid,jdbcType=VARCHAR},
+      </if>
+      <if test="isbn != null">
+        isbn = #{isbn,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gvssimux.pojo.Comment">
+    update comment
+    set comid = #{comid,jdbcType=VARCHAR},
+      uname = #{uname,jdbcType=VARCHAR},
+      uuid = #{uuid,jdbcType=VARCHAR},
+      borrowid = #{borrowid,jdbcType=VARCHAR},
+      isbn = #{isbn,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
