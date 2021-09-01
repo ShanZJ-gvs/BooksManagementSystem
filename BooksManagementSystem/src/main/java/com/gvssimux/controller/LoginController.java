@@ -47,9 +47,7 @@ public class LoginController {
     @ResponseBody
     @RequestMapping("/registerUser")
     public  String  registerUser (String user) {
-
         if (judgeContainsStr(user)&&isStrLength(user,4,8)){
-
             ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
             UserServiceImpl mapper = context.getBean("UserServiceImpl", UserServiceImpl.class);
             //a为1则重复 若a为0不重复
@@ -62,7 +60,6 @@ public class LoginController {
             }
             System.out.println("error1");
             return "error1";
-
         }
         System.out.println("error0");
         return "error0";
@@ -164,9 +161,49 @@ public class LoginController {
     }
 
 
-    @Test
+    @org.junit.Test
     public void  test(){
-        System.out.println(registerPWD("1111w11"));
+        System.out.println("①语句覆盖");
+        registerUname("哈哈哈");
+        registerUname("单");
+        System.out.println("②判定覆盖");
+        registerUname("小明同学");
+        registerUname("笑");
+        System.out.println("③条件覆盖");
+        registerUname("小李同学");
+        registerUname("天");
+        System.out.println("④判定-条件覆盖");
+        registerUname("小李同学");
+        registerUname("吴");
+        System.out.println("⑤组合覆盖");
+        registerUname("小黄同学");
+        registerUname("紫");
+        System.out.println("⑥路径覆盖");
+        registerUname("高同学");
+        registerUname("杨");
+
+    }
+
+
+    @org.junit.Test
+    public void  test1(){
+        System.out.println("①语句覆盖");
+        registerUser("shanzj");
+        registerUser("123ws");
+        registerUser("_12");
+        registerUser("admin");
+        System.out.println("②判定覆盖");
+        registerUser("shanzj1");
+        registerUser("12");
+        registerUser("_ws");
+        registerUser("admin");
+        System.out.println("③条件覆盖④判定-条件覆盖⑤组合覆盖⑥路径覆盖");
+        registerUser("shanzj");
+        registerUser("12");
+        registerUser("_ws");
+        registerUser("admin");
+        registerUser("admin12345678");
+
     }
 
 

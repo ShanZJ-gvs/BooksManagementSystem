@@ -10,28 +10,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e735b0-2284-4e15-a77d-e9523db81992" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BMS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/BooksManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/BooksManagementSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/config/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/config/LoginInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/PageJumpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/PageJumpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/java/com/gvssimux/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/registerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/test/java/usertest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/bookinf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/web/WEB-INF/jsp/userwant.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/src/main/resources/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/com/gvssimux/dao/BookInfDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/com/gvssimux/dao/BorrowDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/com/gvssimux/dao/CommentDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/com/gvssimux/dao/OverTimeDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/com/gvssimux/dao/UserDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/com/gvssimux/dao/UserWantDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/spring-dao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/classes/spring-service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/html/bookinf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/html/borrow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/html/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/html/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/html/userwant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/bookinf.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/borrow.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/message.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/text.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/user.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/jsp/userwant.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/css/Pretty-Registration-Form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/css/untitled-1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/css/untitled.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/fonts/fontawesome5-overrides.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/avatar1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/avatar2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/avatar3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/avatar4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/avatar5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/img-8950fe813f67bd95f918e80b881a312c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/img/avatars/touxiang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/js/bs-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/js/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/assets/js/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/BooksManagementSystem-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BooksManagementSystem/target/classes/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/surefire-reports/TEST-registerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BooksManagementSystem/target/surefire-reports/registerTest.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +141,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSM" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,10 +149,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="全局库" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15426782" />
-    <property name="project.structure.side.proportion" value="0.306962" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.15604396" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,7 +182,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginController.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginController.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <extension name="coverage">
         <pattern>
@@ -135,47 +192,47 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.gvssimux.controller" />
       <option name="MAIN_CLASS_NAME" value="com.gvssimux.controller.LoginController" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="borrow.get10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="borrow.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="borrow" />
-      <option name="METHOD_NAME" value="get10" />
+      <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="registerTest.registerUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BooksManagementSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="registerTest" />
-      <option name="METHOD_NAME" value="registerUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="registerTest.registerUser1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BooksManagementSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="registerTest" />
-      <option name="METHOD_NAME" value="registerUser1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="usertest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="usertest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BooksManagementSystem" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="usertest" />
-      <option name="METHOD_NAME" value="add" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="usertest.get2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksManagementSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="usertest" />
+      <option name="METHOD_NAME" value="get2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="usertest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BooksManagementSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="usertest" />
+      <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,20 +326,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.registerTest.registerUser" />
-      <item itemvalue="JUnit.registerTest.registerUser1" />
-      <item itemvalue="JUnit.borrow.get10" />
-      <item itemvalue="JUnit.LoginController.test" />
+      <item itemvalue="JUnit.LoginController.test1" />
+      <item itemvalue="JUnit.borrow.getAll" />
+      <item itemvalue="JUnit.usertest.getAll" />
+      <item itemvalue="JUnit.usertest.get2" />
+      <item itemvalue="JUnit.usertest.get" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
-      <item itemvalue="JUnit.usertest.add" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.usertest.add" />
-        <item itemvalue="JUnit.LoginController.test" />
-        <item itemvalue="JUnit.registerTest.registerUser1" />
-        <item itemvalue="JUnit.borrow.get10" />
-        <item itemvalue="JUnit.registerTest.registerUser" />
+        <item itemvalue="JUnit.borrow.getAll" />
+        <item itemvalue="JUnit.usertest.get" />
+        <item itemvalue="JUnit.usertest.get2" />
+        <item itemvalue="JUnit.usertest.getAll" />
+        <item itemvalue="JUnit.LoginController.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +388,21 @@
       <workItem from="1623663453566" duration="2018000" />
       <workItem from="1623665506331" duration="9359000" />
       <workItem from="1623680904463" duration="970000" />
-      <workItem from="1623729201953" duration="13415000" />
+      <workItem from="1623729201953" duration="13617000" />
+      <workItem from="1623749238915" duration="2833000" />
+      <workItem from="1623752449004" duration="263000" />
+      <workItem from="1623754527416" duration="1610000" />
+      <workItem from="1623761358344" duration="3845000" />
+      <workItem from="1630293853654" duration="639000" />
+      <workItem from="1630297426649" duration="1101000" />
+      <workItem from="1630298581378" duration="5851000" />
+      <workItem from="1630309879217" duration="666000" />
+      <workItem from="1630396191769" duration="1593000" />
+      <workItem from="1630400251908" duration="569000" />
+      <workItem from="1630402607534" duration="237000" />
+      <workItem from="1630456053957" duration="1757000" />
+      <workItem from="1630462693601" duration="4786000" />
+      <workItem from="1630476247694" duration="3063000" />
     </task>
     <task id="LOCAL-00001" summary="2021">
       <created>1623674044622</created>
