@@ -35,29 +35,29 @@ public class UserServiceImpl implements UserService{
         return mapper.updateByPrimaryKey(record);
     }
 
-    @Override
+
     public List<User> selectAll(){
         return mapper.selectAll();
     }
 
-    @Override
+
     public User selectByUserId(String userid) {
         return mapper.selectByUserId(userid);
     }
 
-    @Override
+
     public int getUserNum() {
         return mapper.getUserNum();
     }
 
-    @Override
+
     public User getUserIdByUserNamePwd(String username, String pwd) {
         return mapper.getUserIdByUserNamePwd(username, pwd);
     }
 
     //2021-写
     //注册---验证用户名是否在数据中
-    @Override
+
     public int getUserByUser(String user){
         if (mapper.getUserByUser(user)==null){
             return 0;
